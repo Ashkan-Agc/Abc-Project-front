@@ -1,0 +1,177 @@
+/*================================================================================
+	Item Name: Stack - Responsive Admin Theme
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
+}
+#vulnerabilitycard{
+	background-color: #353D6C;
+}
+.VulnerablityBoxText{
+	color: white;
+}
+#VulnerablityBox{
+	background-color: #313768;
+	border-radius: 10px;
+	padding: 0;
+}
+#LincenseCard{
+	background-color: #313768;
+	border-radius: 25px;
+}
+.lincenseDeitails{
+	color:#ffff;
+	font-size: 14px;
+}
+.lincenseDeitails > .row{
+	padding: 5px 0;
+}
+.card-header{
+	background-color: #353D6C;
+	color: white;
+	border-radius: 0;
+}
+.card.summary-card{
+	background-color:#303667;
+	color:white;
+	padding: 15px;
+	border-radius:20px;
+}
+.apexcharts-legend-text{
+	color: white;
+}
+.card.summary-card .card-sep{
+	border-right:1px solid #6269AA
+} 
+
+.card.summary-card .small-head{
+	font-size:13px;
+	margin-bottom: 10px;
+}
+.card.summary-card .small-head-number{
+	font-size:32px;
+}
+.card.summary-card .small-head-sub-number{
+	font-size:12px;
+}
+
+.card-alerts{
+	border-radius: 20px 20px 0px 0px;
+	overflow: hidden;
+	background-color:#2B3261;
+}
+
+.card-alerts .card-body{
+	padding:0
+}
+
+.card-alerts .alert-list,.card-alerts .vuln-list  {
+	padding: 0;
+	color:white;
+}
+
+.alert-list .alert-item {
+	list-style: none;
+	border-bottom: 1px solid #333B6B;
+	line-height: 50px;
+}
+
+.alert-list .vuln-item {
+	list-style: none;
+	border-bottom: 1px solid #3B4576;
+	line-height: 50px;
+}
+
+.card-vulns .card-body{
+	background-color: #323969;
+}
+
+.vuln-item span{
+	display: inline-block;
+}
+
+.vuln-item .progress{
+	height: 0.5rem;
+}
+
+span.vuln-name {
+    width: 30%;
+}
+
+span.vuln-count {
+    width: 10%;
+}
+
+span.vuln-percentage {
+    width: 50%;
+}
+
+li.vuln-item {
+    padding: 0 1rem 0 1.5rem;
+    background-color: #3B4576;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+
+.alert-list .alert-item a{
+	cursor: pointer;
+	color: white;
+	font-size:13px;
+}
+
+.alert-list .alert-item span.alert-logo {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card-alerts .card-header{
+	background-color:#2B3261;
+	color:white;
+	border-radius: 20px 20px 0px 0px;
+	border-bottom: 2px solid #333B6B;
+}
+
+.card-alerts .alert-date-sep{
+	border-bottom: 2px solid #333B6B;
+	text-align: center;
+	font-size: 13px;
+	line-height: 25px;
+	background-color: #303667;
+}
+
+.card-alerts .card-header h4{
+	font-size:13px;
+}
+
+.card-title-item{
+	display: inline-block;
+}
+
+.vuln-count-item{
+	width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.vuln-count-item.bg-critical {
+	background-color: #BC3057 !important;
+}
+.vuln-count-item.bg-warning {
+	background-color: #EAA323 !important;
+}
+
+.ucase{
+	text-transform: uppercase;
+}

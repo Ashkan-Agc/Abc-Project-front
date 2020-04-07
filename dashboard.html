@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <title>Dashboard</title>
+  <link rel="apple-touch-icon" href="images/ico/apple-icon-120.png">
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- <script src="js/ApexChart/dist/apexcharts.min.js"></script> -->
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+  <!-- END: Vendor CSS-->
+
+  <!-- BEGIN: Theme CSS-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.min.css">
+  <link rel="stylesheet" type="text/css" href="css/colors.min.css">
+  <link rel="stylesheet" type="text/css" href="css/components.min.css">
+  <!-- END: Theme CSS-->
+
+  <!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" type="text/css" href="css/vertical-menu-modern.css">
+  <!-- link(rel='stylesheet', type='text/css', href=app_assets_path+'/css'+rtl+'/pages/users.css')-->
+  <!-- END: Page CSS-->
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar menu-collapsed" data-open="click"
+  data-menu="vertical-menu-modern" data-col="2-columns">
+
+  <!-- BEGIN: Header-->
+  <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-semi-dark navbar-shadow">
+    <div class="navbar-wrapper">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+              href="#"><i class="feather icon-menu font-large-1"></i></a></li>
+          <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo"
+                alt="stack admin logo" src="images/logo.png" height="30">
+              <h2 class="brand-text">APA </h2>
+
+            </a></li>
+          <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0"
+              data-toggle="collapse"><i class="toggle-icon feather icon-toggle-right font-medium-3 white"
+                data-ticon="feather.icon-toggle-right"></i></a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+              data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-container content">
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+          <ul class="nav navbar-nav mr-auto float-left">
+            <div class="text-white">WEB APPLICATION ANALYSIS DASHBOARD</div>
+          </ul>
+          <ul class="nav navbar-nav float-right">
+
+            <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
+                data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span
+                  class="badge badge-pill badge-danger badge-up">5</span></a>
+              <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                <li class="dropdown-menu-header">
+                  <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span><span
+                      class="notification-tag badge badge-danger float-right m-0">5 New</span></h6>
+                </li>
+                <li class="scrollable-container media-list"><a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i
+                          class="feather icon-plus-square icon-bg-circle bg-cyan"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading">You have new order!</h6>
+                        <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer
+                          elit.</p><small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">30 minutes
+                            ago</time></small>
+                      </div>
+                    </div>
+                  </a><a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i
+                          class="feather icon-download-cloud icon-bg-circle bg-red bg-darken-1"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading red darken-1">99% Server load</h6>
+                        <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p>
+                        <small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Five hour
+                            ago</time></small>
+                      </div>
+                    </div>
+                  </a><a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i
+                          class="feather icon-alert-triangle icon-bg-circle bg-yellow bg-darken-3"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                        <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                      </div>
+                    </div>
+                  </a><a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i
+                          class="feather icon-check-circle icon-bg-circle bg-cyan"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading">Complete the task</h6><small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last
+                            week</time></small>
+                      </div>
+                    </div>
+                  </a><a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i class="feather icon-file icon-bg-circle bg-teal"></i>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="media-heading">Generate monthly report</h6><small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last
+                            month</time></small>
+                      </div>
+                    </div>
+                  </a></li>
+                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center"
+                    href="javascript:void(0)">Read all notifications</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#"
+                data-toggle="dropdown">
+                <div class="avatar avatar-online"><img src="images/user.png" alt="avatar"><i></i>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="login-with-bg-image.html"><i class="feather icon-power"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END: Header-->
+
+
+  <!-- BEGIN: Main Menu-->
+  <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="main-menu-content">
+      <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+        <li class=" nav-item"><a href="app-email.html"><i class="feather icon-mail"></i><span class="menu-title"
+              data-i18n="Email Application">Email Application</span></a>
+        </li>
+        <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span
+              class="menu-title" data-i18n="Chat Application">Chat Application</span></a>
+        </li>
+        <li class=" nav-item"><a href="app-todo.html"><i class="feather icon-check-square"></i><span class="menu-title"
+              data-i18n="Todo Application">Todo Application</span></a>
+        </li>
+        <li class=" nav-item"><a href="app-kanban.html"><i class="feather icon-file-plus"></i><span class="menu-title"
+              data-i18n="Kanban Application">Kanban Application</span></a>
+        </li>
+        <li class=" nav-item"><a href="app-contacts.html"><i class="feather icon-users"></i><span class="menu-title"
+              data-i18n="Contacts">Contacts</span></a>
+        </li>
+        <li class=" nav-item"><a href="project-summary.html"><i class="feather icon-airplay"></i><span
+              class="menu-title" data-i18n="Project Summary">Project Summary</span></a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- END: Main Menu-->
+
+  <!-- BEGIN: Content-->
+  <div class="app-content content">
+    <div class="content-wrapper">
+      <div class="content-header row">
+      </div>
+      <div class="content-body">
+        <!-- Analytics spakline & chartjs  -->
+
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- for summary -->
+                <div class="card summary-card">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class=" col-lg-4 ">
+                          <div class="row">
+                            <div class="col-lg-7">
+                              <div class="small-head ucase">
+                                Vulnerabilities
+                              </div>
+                              <div class="small-head-number">
+                                9.2k
+                              </div>
+                            </div>
+                            <div class="col-lg-5 card-sep">
+                              <div class="small-head ucase">
+                                severity
+                              </div>
+                              <div class="small-head-sub-number ">
+                                <div>
+                                  <span class="text-danger mr-1">337</span>
+                                  <span>Critical</span>
+                                </div>
+                                <div>
+                                  <span class="text-warning mr-1">2.5K</span>
+                                  <span>High</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" col-lg-4 ">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="small-head ucase">
+                                web applications
+                              </div>
+                              <div class="small-head-number">
+                                3.5k
+                              </div>
+                            </div>
+                            <div class="col-lg-6 card-sep">
+                              <div class="small-head ucase">
+                                detections
+                              </div>
+                              <div class="small-head-sub-number ">
+                                <div>
+                                  <span class="mr-1">12</span>
+                                  <span class="ucase">Last 30 days</span>
+                                </div>
+                                <div>
+                                  <span class="mr-1">55</span>
+                                  <span class="ucase">last 7 days</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" col-lg-4 ">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="small-head ucase">
+                                scans (90 days)
+                              </div>
+                              <div class="small-head-number">
+                                1.1K
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="small-head ucase">
+                                type
+                              </div>
+                              <div class="small-head-sub-number ">
+                                <div>
+                                  <span class="text-success mr-1">82%</span>
+                                  <span>NETWORK</span>
+                                </div>
+                                <div>
+                                  <span class="text-danger mr-1">18%</span>
+                                  <span>WEB</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <!-- vuln trend -->
+                <div class="card " style="background-color:#353D6C ;">
+                  <div class="card-header border-0-bottom">
+                    <h4 class="card-title">Vulnerability detection trend</h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                      <ul class="list-inline mb-0">
+                        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div id="vulnerabilitycard" class="card-body">
+                      <div id="VulnerabilityDetection">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <!-- vuln vulns jewels -->
+                <div class="row">
+                  <div class="col-xl-3 col-lg-6 col-12">
+                    <div id="VulnerablityBox" class="card">
+                      <div class="card-content p-0">
+                        <div id="chartRating1" class="p-0">
+                          <h3 class="pt-1 pl-1 pb-0" style="color: white;">225K</h3>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-12">
+                    <div id="VulnerablityBox" class="card">
+                      <div class="card-content p-0">
+                        <div id="chartRating2" class="p-0">
+                          <h3 class="pt-1 pl-1 pb-0" style="color: white;">225K</h3>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-12">
+                    <div id="VulnerablityBox" class="card">
+                      <div class="card-content p-0">
+                        <div id="chartRating3" class="p-0">
+                          <h3 class="pt-1 pl-1 pb-0" style="color: white;">225K</h3>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-12">
+                    <div id="VulnerablityBox" class="card">
+                      <div class="card-content p-0">
+                        <div id="chartRating4" class="p-0">
+                          <h3 class="pt-1 pl-1 pb-0" style="color: white;">225K</h3>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <!-- scan results -->
+                <div class="card" style="margin-bottom: 0;">
+                  <div class="card-header border-0-bottom" style="color:white; background: #353D6C">
+                    <h4 class="card-title ucase">last scan results</h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                      <ul class="list-inline mb-0">
+                        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-alerts card-vulns">
+                  <div class="card-header  border-0-bottom">
+                    <h4 class="card-title ucase">
+                      <span class="card-title-item ucase" style="width:30%">domain</span>
+                      <span class="card-title-item ucase" style="width:25%">Vulnerabilities</span>
+                      <span class="card-title-item ucase" style="width:20%">severity</span>
+                      <span class="card-title-item ucase" style="width:20%">last scan</span>
+                    </h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <ul class="vuln-list">
+                        <li class="vuln-item">
+                          <span class="card-title-item" style="width:30%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:25%">
+                            <span class="vuln-count-item bg-critical">0</span>
+                            <span class="vuln-count-item bg-danger">0</span>
+                            <span class="vuln-count-item bg-warning">0</span>
+                            <span class="vuln-count-item bg-success">0</span>
+                          </span>
+                          <span class="card-title-item text-danger ucase"
+                            style="width:20%;font-weight:bold">Critical</span>
+                          <span class="card-title-item ucase" style="width:20%">2020/04/05 02:34 AM</span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="card-title-item" style="width:30%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:25%">
+                            <span class="vuln-count-item bg-critical">0</span>
+                            <span class="vuln-count-item bg-danger">0</span>
+                            <span class="vuln-count-item bg-warning">0</span>
+                            <span class="vuln-count-item bg-success">0</span>
+                          </span>
+                          <span class="card-title-item text-danger ucase"
+                            style="width:20%;font-weight:bold">Critical</span>
+                          <span class="card-title-item ucase" style="width:20%">2020/04/05 02:34 AM</span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="card-title-item" style="width:30%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:25%">
+                            <span class="vuln-count-item bg-critical">0</span>
+                            <span class="vuln-count-item bg-danger">0</span>
+                            <span class="vuln-count-item bg-warning">0</span>
+                            <span class="vuln-count-item bg-success">0</span>
+                          </span>
+                          <span class="card-title-item text-danger ucase"
+                            style="width:20%;font-weight:bold">Critical</span>
+                          <span class="card-title-item ucase" style="width:20%">2020/04/05 02:34 AM</span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="card-title-item" style="width:30%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:25%">
+                            <span class="vuln-count-item bg-critical">0</span>
+                            <span class="vuln-count-item bg-danger">0</span>
+                            <span class="vuln-count-item bg-warning">0</span>
+                            <span class="vuln-count-item bg-success">0</span>
+                          </span>
+                          <span class="card-title-item text-danger ucase"
+                            style="width:20%;font-weight:bold">Critical</span>
+                          <span class="card-title-item ucase" style="width:20%">2020/04/05 02:34 AM</span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="card-title-item" style="width:30%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:25%">
+                            <span class="vuln-count-item bg-critical">0</span>
+                            <span class="vuln-count-item bg-danger">0</span>
+                            <span class="vuln-count-item bg-warning">0</span>
+                            <span class="vuln-count-item bg-success">0</span>
+                          </span>
+                          <span class="card-title-item text-danger ucase"
+                            style="width:20%;font-weight:bold">Critical</span>
+                          <span class="card-title-item ucase" style="width:20%">2020/04/05 02:34 AM</span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="card-title-item" style="width:30%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:25%">
+                            <span class="vuln-count-item bg-critical">0</span>
+                            <span class="vuln-count-item bg-danger">0</span>
+                            <span class="vuln-count-item bg-warning">0</span>
+                            <span class="vuln-count-item bg-success">0</span>
+                          </span>
+                          <span class="card-title-item text-danger ucase"
+                            style="width:20%;font-weight:bold">Critical</span>
+                          <span class="card-title-item ucase" style="width:20%">2020/04/05 02:34 AM</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <!-- scan results -->
+                <div class="card" style="margin-bottom: 0;">
+                  <div class="card-header border-0-bottom" style="color:white; background: #353D6C">
+                    <h4 class="card-title ucase">availability results</h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                      <ul class="list-inline mb-0">
+                        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-alerts card-vulns">
+                  <div class="card-header  border-0-bottom">
+                    <h4 class="card-title ucase">
+                      <span class="card-title-item ucase" style="width:5%"></span>
+                      <span class="card-title-item ucase" style="width:25%">target</span>
+                      <span class="card-title-item ucase" style="width:10%">type</span>
+                      <span class="card-title-item ucase" style="width:10%">uptime</span>
+                      <span class="card-title-item ucase" style="width:10%">up since</span>
+                      <span class="card-title-item ucase text-center" style="width:30%">response time</span>
+                    </h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <ul class="vuln-list">
+                        <li class="vuln-item">
+                          <span class="card-title-item ucase" style="width:5%"><img width="18"
+                              src="images/target-up.png" alt=""></span>
+                          <span class="card-title-item" style="width:25%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:10%">HTTP</span>
+                          <span class="card-title-item ucase" style="width:10%">96%</span>
+                          <span class="card-title-item ucase" style="width:10%">5 month</span>
+                          <span class="card-title-item ucase" style="width:30%">
+                            <div id="uptime1"></div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="card-title-item ucase" style="width:5%"><img width="18"
+                              src="images/target-up.png" alt=""></span>
+                          <span class="card-title-item" style="width:25%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:10%">HTTP</span>
+                          <span class="card-title-item ucase" style="width:10%">96%</span>
+                          <span class="card-title-item ucase" style="width:10%">5 month</span>
+                          <span class="card-title-item ucase" style="width:30%">
+
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="card-title-item ucase" style="width:5%"><img width="18"
+                              src="images/target-down.png" alt=""></span>
+                          <span class="card-title-item" style="width:25%">cert.uma.ac.ir</span>
+                          <span class="card-title-item ucase" style="width:10%">HTTP</span>
+                          <span class="card-title-item ucase" style="width:10%">96%</span>
+                          <span class="card-title-item ucase" style="width:10%">5 month</span>
+                          <span class="card-title-item ucase" style="width:30%">
+
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row">
+              <!-- alerts -->
+              <div class="col-lg-12">
+                <div class="card card-alerts">
+                  <div class="card-header  border-0-bottom">
+                    <h4 class="card-title ucase">latest alerts</h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                      <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div id="goal-list-scroll" class="table-responsive height-350 position-relative">
+                        <ul class="alert-list">
+                          <li class="alert-date-sep">
+                            (2020/4/5)
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/bug-alert-red.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/bug-alert-orange.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/down-alert-red.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/bug-alert-red.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/bug-alert-orange.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+                          <li class="alert-date-sep">
+                            (2020/4/3)
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/bug-alert-red.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/bug-alert-red.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+                          <li class="alert-item">
+                            <a href="#">
+                              <span class="alert-logo">
+                                <img src="images/bug-alert-red.png" alt="" width="25">
+                              </span>
+                              <span class="alert-text">an xss is detected</span>
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- top vulns -->
+              <div class="col-lg-12">
+                <div class="card card-alerts card-vulns">
+                  <div class="card-header  border-0-bottom">
+                    <h4 class="card-title ucase">top vulnerabilities detected</h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <ul class="vuln-list">
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">10</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 95%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">10</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-red" role="progressbar" style="width: 95%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">10</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 95%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">10</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 95%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">9</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-red" role="progressbar" style="width: 95%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">1</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 95%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">10</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 95%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">4</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-red" role="progressbar" style="width: 95%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                        <li class="vuln-item">
+                          <span class="vuln-name">xss</span>
+                          <span class="vuln-count">6</span>
+                          <span class="vuln-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 95%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- license -->
+              <div class="col-lg-12">
+                <div class="card" id="LincenseCard">
+                  <div class="card-header border-0-bottom" style="border-radius: 20px; background-color: #313768;">
+                    <h4 class="card-title">license</h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                      <ul class="list-inline mb-0">
+                        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div id="LincenseCircle"></div>
+                      <div class="lincenseDeitails p-1">
+                        <div class="row">
+                          <div class="col-6 p-0">STATUS<span style="color: #BC3057; font-size:14px;"> :</span></div>
+                          <div class="col-6 "> EXPIRED IN 85 DAYS</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6 p-0">EIDTION<span style="color: #BC3057;font-size:14px;"> :</span></div>
+                          <div class="col-6 "> ENTERPRISE</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6 p-0">lINCENSE TARGETS<span style="color: #BC3057;font-size:14px;"> :</span>
+                          </div>
+                          <div class="col-6 "> 145</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6 p-0">lINCENSE USERS<span style="color: #BC3057;font-size:14px;"> :</span>
+                          </div>
+                          <div class="col-6"> 1</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>s
+  <script src="js/vendors.min.js"></script>
+  <script src="js/app-menu.min.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="js/chart/VulnerabilityDetectionTrend.js"></script>
+  <script src="js/chart/Rating.js"></script>
+  <script src="js/chart/UpTime.js"></script>
+  <script src="js/chart/Lincense.js"></script>
+  <script src="js/dashboard-analytics.min.js"></script>
+</body>
+
+</html>

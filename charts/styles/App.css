@@ -1,0 +1,30 @@
+body{
+  background-color: #353D6C!important;
+  color:white;
+  margin: 20px 0px
+}
+div[class^="col"]{
+  /* border:1px solid white */
+}
+.box{
+  background-color: #313768;
+  min-height:400px;
+  margin-top:40px;
+  padding: 30px;
+  border-radius: 25px;
+}
+.box.radial{
+  /* width: 380px; */
+  margin: 40 auto;
+}
+.box.bg-none{
+  background-color: inherit;
+  padding: 10px;
+  padding-top: 30px;
+}
+.box-title{
+  margin-bottom: 20px;
+}
+.full-width{
+  margin-top:70px
+}
