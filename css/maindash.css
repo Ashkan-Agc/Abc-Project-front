@@ -80,10 +80,21 @@ body{
     border-radius: 25px;
 }
 
-.assets .row .col-lg3 .card{
-	border-radius: 10px;
-
+#assets > .col-lg-3 > .card{
+	border-radius: 6px;
+	background-color: #313768;
+	height:120px ;
+	color: white;
 }
+#assets > .col-lg-3 > .card > .container{
+	padding: 15px;
+}
+#assets .col-lg-3{
+	padding:0 10px ;
+	margin-right: -10px;
+}
+
+
 .active{
 	background-color:#313768 ;
 }

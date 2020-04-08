@@ -1,9 +1,10 @@
 var options = {
-    series: [85],
-    chart: {
-    height: 350,
-        type: 'radialBar',
-    background:'#313768',
+  series: [85],
+  chart: {
+    height: 300,
+    width:300,
+    type: 'radialBar',
+    background: '#313768',
     toolbar: {
       show: true
     }
@@ -12,7 +13,7 @@ var options = {
     radialBar: {
       startAngle: -135,
       endAngle: 225,
-       hollow: {
+      hollow: {
         margin: 0,
         size: '60%',
         background: '#313768',
@@ -40,7 +41,7 @@ var options = {
           opacity: 0.35
         }
       },
-  
+
       dataLabels: {
         show: true,
         name: {
@@ -50,7 +51,7 @@ var options = {
           fontSize: '17px'
         },
         value: {
-          formatter: function(val) {
+          formatter: function (val) {
             return parseInt(val);
           },
           color: '#ffffff',
@@ -66,18 +67,18 @@ var options = {
       shade: 'dark',
       type: 'vertical',
       shadeIntensity: 0.4,
-      gradientToColors: ['#4646D3','#16CEB9'],
+      gradientToColors: ['#4646D3', '#16CEB9'],
       inverseColors: true,
       opacityFrom: 1,
       opacityTo: 1,
-      stops: [0,100]
+      stops: [0, 100]
     }
   },
   stroke: {
     lineCap: 'round'
   },
   labels: ['Days left'],
-  };
+};
 
 var chart = new ApexCharts(document.querySelector("#LincenseCircle"), options);
 chart.render();
