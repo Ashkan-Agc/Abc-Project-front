@@ -1,61 +1,84 @@
 var options = {
-    series: [44, 55, 67],
+    series: [80, 69, 51],
     chart: {
-        height: 350,
+        height: 220,
         type: 'radialBar',
         background: '#313768',
         toolbar: {
             show: true
         }
     },
+    stroke: {
+        lineCap: 'round'
+        
+    },
     plotOptions: {
         radialBar: {
-            dataLabels: {
-                name: {
-                    fontSize: '22px',
-                },
-                value: {
-                    fontSize: '20px',
-                },
-                total: {
-                    show: true,
-                    label: 'Total',
-                    formatter: function (w) {
-                        // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
-                        return 249
-                    }
+          hollow:{
+            size: '40%',
+            background: 'transparent',
+          },
+          track: {
+            background: '#565E9B',
+            strokeWidth: '15%',
+          },
+          dataLabels: {
+            total: {
+              show: true,
+              color: "#FFFFFF",
+              fontSize: '15px',
+              formatter: function (w) {
+                  return w.globals.seriesTotals[0]
                 }
-            }
+            },
+            name: {
+                show: false,
+              },
+              value: {
+                show: true,
+                fontSize: '30px',
+                fontFamily: undefined,
+                fontWeight: 300,
+                color: "#FFFFFF",
+                offsetY: 8,
+                formatter: function (val) {
+                 return val
+               }
+              },
+          }
         }
-    },
+      },
     track: {
         background: '#313768',
-        strokeWidth: 2,
-        margin: 0, // margin is in pixels
+        strokeWidth: 0.3,
+        margin: 100, // margin is in pixels
         dropShadow: {
-          enabled: false,
-          top: -3,
-          left: 0,
-          blur: 5,
-          opacity: 0.35
+            enabled: false,
+            top: -3,
+            left: 0,
+            blur: 5,
+            opacity: 0.35
         }
     },
     fill: {
+        colors: ['#2951D5','#9b2ebf', '#F45B35'],
         type: 'gradient',
         gradient: {
-          shade: 'dark',
-          type: 'vertical',
-          shadeIntensity: 0.4,
-          gradientToColors: ['#4646D3', '#16CEB9'],
-          inverseColors: true,
-          opacityFrom: 1,
-          opacityTo: 1,
-          stops: [0, 100]
+            shade: 'dark',
+            shadeIntensity: 100,
+            type: 'vertical',
+            opacityFrom: 1,
+            gradientToColors: ['#65AB9A','#f135f4', '#F6B154'],
+            opacityTo: 1,
+            stops: [0, 100]
         }
-      },
+    },
     labels: ['Apples', 'Oranges', 'Bananas'],
 };
 
 
 var chart = new ApexCharts(document.querySelector("#webappcond"), options);
+chart.render();
+
+var chart = new ApexCharts(document.querySelector("#networkcond"), options);
 chart.render();

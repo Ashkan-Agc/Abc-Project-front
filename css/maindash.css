@@ -75,13 +75,13 @@ body{
 	border-radius:0 8px;
 	margin-left: 3px;
   }
-#LincenseCard{
+#webappscondition{
 	background-color: #313768;
-    border-radius: 25px;
+    border-radius:0;
 }
 
 #assets > .col-lg-3 > .card{
-	border-radius: 6px;
+	border-radius: 10px;
 	background-color: #313768;
 	height:120px ;
 	color: white;
@@ -94,17 +94,21 @@ body{
 	margin-right: -10px;
 }
 
+.webappdetails{	
+	padding: 0;
+}
+.webappdetails .card{
+	margin: 0 ;
+	border-radius: 5px;
+	background-color: #313768;
+	border: 1px solid #358DF2;
+	
+} 
 
 .active{
 	background-color:#313768 ;
 }
-.lincenseDeitails{
-	color:#ffff;
-	font-size: 14px;
-}
-.lincenseDeitails > .row{
-	padding: 5px 0;
-}
+
 .card-header{
 	background-color: #353D6C;
 	color: white;

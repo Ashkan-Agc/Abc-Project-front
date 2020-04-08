@@ -154,24 +154,23 @@
     <div class="main-menu-content">
       <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
         <li class=" nav-item"><a href="app-email.html"><i class="feather icon-mail"></i><span class="menu-title"
-              data-i18n="Email Application">Email Application</span></a>
+              data-i18n="Email Application">Home</span></a>
         </li>
-        <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span
-              class="menu-title" data-i18n="Chat Application">Chat Application</span></a>
+        <li class=" nav-item"><a href="dashboard.html"><i class="feather icon-message-square"></i><span
+              class="menu-title" data-i18n="Chat Application">web dashboard</span></a>
         </li>
         <li class=" nav-item"><a href="app-todo.html"><i class="feather icon-check-square"></i><span class="menu-title"
-              data-i18n="Todo Application">Todo Application</span></a>
+              data-i18n="Todo Application">Targets</span></a>
+        </li>
+        <li class=" nav-item"><a href="maindash.html"><i class="feather icon-check-square"></i><span class="menu-title"
+              data-i18n="Todo Application">Main dashboard</span></a>
         </li>
         <li class=" nav-item"><a href="app-kanban.html"><i class="feather icon-file-plus"></i><span class="menu-title"
-              data-i18n="Kanban Application">Kanban Application</span></a>
+              data-i18n="Kanban Application">Scans</span></a>
         </li>
         <li class=" nav-item"><a href="app-networks.html"><i class="feather icon-users"></i><span class="menu-title"
-              data-i18n="networks">networks</span></a>
+              data-i18n="networks">User profile</span></a>
         </li>
-        <li class=" nav-item"><a href="project-summary.html"><i class="feather icon-airplay"></i><span
-              class="menu-title" data-i18n="Project Summary">Project Summary</span></a>
-        </li>
-
       </ul>
     </div>
   </div>
@@ -183,9 +182,9 @@
       <div class="content-header row">
       </div>
       <div class="content-body">
-        <!-- Analytics spakline & chartjs  -->
         <div class="row">
           <div class="col-lg-9">
+            <!-- start assets -->
             <div class="row">
               <div class="col-lg-12">
                 <h4 class="card-title">ASSETS DISCOVERD</h4>
@@ -255,11 +254,9 @@
                   </div>
                 </div>
               </div>
+              <!-- end assets -->
+              <!-- tabs start -->
               <div class="col-lg-12">
-                <!-- vuln trend -->
-              </div>
-              <div class="col-lg-12">
-                <!-- scan results -->
                 <div class="card" style="margin-bottom: 0; background-color:#353D6C;">
                   <div class="card-header border-0-bottom" style="padding-left: 0;">
                     <h4 class="card-title ucase">INFURSTRAUSTURE SUMMARY</h4>
@@ -275,7 +272,8 @@
                     <div class="tab">
                       <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'web')">WEB</button>
                       <button class="tablinks" onclick="openTab(event, 'email')">EMAIL</button>
-                      <button class="tablinks" onclick="openTab(event, 'networks')">NETWORK DEVICES</button>
+                      <button style="padding-left:12px ; padding-right:12px ;" class="tablinks"
+                        onclick="openTab(event, 'networks')">NETWORK DEVICES</button>
                       <button class="tablinks" onclick="openTab(event, 'other')">OTHERS</button>
                     </div>
                     <div id="web" class="tabcontent">
@@ -429,16 +427,12 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-12">
-                <!-- scan results -->
-
-              </div>
+              <!-- tabs ends -->
             </div>
           </div>
           <div class="col-lg-3">
             <div class="row">
-              <!-- alerts -->
+              <!-- start last alert -->
               <div class="col-lg-12">
                 <div class="card card-alerts">
                   <div class="card-header  border-0-bottom">
@@ -531,12 +525,15 @@
                   </div>
                 </div>
               </div>
-
-              <!-- license -->
+              <!-- end last alert -->
+              <!-- wEB APPS CONDITION -->
               <div class="col-lg-12">
-                <div class="card" id="LincenseCard">
-                  <div class="card-header border-0-bottom " style="border-radius: 20px; background-color: #313768;">
-                    <h4 class="card-title">license</h4>
+                <div class="card-header border-0-bottom " style="border-radius: 0; background-color: #353D6C;">
+                  <h4 class="card-title pl-0">WEB APPS CONDITION</h4>
+                </div>
+                <div class="card" style="border-radius:20px; background-color: #313768;">
+                  <div class="card-header border-0-bottom "
+                    style="border-radius: 0; background-color: #313768; border-radius: 20px;">
                     <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                     <div class="heading-elements">
                       <ul class="list-inline mb-0">
@@ -545,45 +542,117 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="card-content">
-                    <div class="card-body">
-                      <div id="webappcond"></div>
-                      <div class="lincenseDeitails p-1">
-                        <div class="row">
-                          <div class="col-6 p-0">STATUS<span style="color: #BC3057; font-size:14px;"> :</span></div>
-                          <div class="col-6 "> EXPIRED IN 85 DAYS</div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6 p-0">EIDTION<span style="color: #BC3057;font-size:14px;"> :</span></div>
-                          <div class="col-6 "> ENTERPRISE</div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6 p-0">lINCENSE TARGETS<span style="color: #BC3057;font-size:14px;"> :</span>
+                  <div class="card-body">
+                    <div id="webappcond"></div>
+                    <div class="webappdetails">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card ">
+                            <div class="container">
+                              <h1 style="color:#EAA323;">40%</h1>
+                              <p style="color:white;" class="ucase">Critical</p>
+                            </div>
                           </div>
-                          <div class="col-6 "> 145</div>
                         </div>
-                        <div class="row">
-                          <div class="col-6 p-0">lINCENSE USERS<span style="color: #BC3057;font-size:14px;"> :</span>
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card">
+                            <div class="container">
+                              <h1 style="color:#BC3057;">40%</h1>
+                              <p style="color:white;" class="ucase"> high</p>
+                            </div>
                           </div>
-                          <div class="col-6"> 1</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card ">
+                            <div class="container">
+                              <h1 style="color:rgb(35, 234, 168);">40%</h1>
+                              <p style="color:white;" class="ucase">medium</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card">
+                            <div class="container">
+                              <h1 style="color:rgb(60, 99, 170);">40%</h1>
+                              <p style="color:white;" class="ucase"> low</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- end WeB apps condition card -->
+                <!-- Network device condition card -->
+                <div class="card-header border-0-bottom " style="border-radius: 0; background-color: #353D6C;">
+                  <h4 class="card-title pl-0">NETWORK DEVICES CONDITION</h4>
+                </div>
+                <div class="card" style="border-radius:20px; background-color: #313768;">
+                  <div class="card-header border-0-bottom "
+                    style="border-radius: 0; background-color: #313768; border-radius: 20px;">
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                      <ul class="list-inline mb-0">
+                        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div id="networkcond"></div>
+                    <div class="webappdetails">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card ">
+                            <div class="container">
+                              <h1 style="color:#EAA323;">40%</h1>
+                              <p style="color:white;" class="ucase">Critical</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card">
+                            <div class="container">
+                              <h1 style="color:#BC3057;">40%</h1>
+                              <p style="color:white;" class="ucase"> high</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card ">
+                            <div class="container">
+                              <h1 style="color:rgb(35, 234, 168);">40%</h1>
+                              <p style="color:white;" class="ucase">medium</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                          <div class="card">
+                            <div class="container">
+                              <h1 style="color:rgb(60, 99, 170);">40%</h1>
+                              <p style="color:white;" class="ucase"> low</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end Network device condition card -->
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </!DOCTYPE>
-  </!DOCTYPE>
-  <script src="js/vendors.min.js"></script>
-  <script src="js/app-menu.min.js"></script>
-  <script src="js/app.min.js"></script>
-  <script src="js/dashboard-analytics.min.js"></script>
-  <script src="js/tabs.js"></script>
-  <script src="js/chart/Radial.js"></script>
+        <script src="js/vendors.min.js"></script>
+        <script src="js/app-menu.min.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/dashboard-analytics.min.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/chart/Radial.js"></script>
 </body>
 
 </html>
