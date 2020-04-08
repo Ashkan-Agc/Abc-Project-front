@@ -1,13 +1,4 @@
-/*=========================================================================================
-    File Name: vertical-menu-modern.scss
-    Description: A calssic vertical modern style menu with expand and collops support. It support
-    light & dark version, filpped layout, right side icons, native scroll and borders menu
-    item seperation.
-    ----------------------------------------------------------------------------------------
-    Item Name: Stack - Responsive Admin Theme
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+
 body.vertical-layout.vertical-menu-modern .main-menu .navigation > li > a > i {
   font-size: 1.2rem; }
 
