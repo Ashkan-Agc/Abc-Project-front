@@ -6,7 +6,7 @@ body{
     color: white;
 }
 
- .centerDiv
+.centerDiv
     {
         margin: auto;
         width: 90%;
@@ -25,7 +25,6 @@ body{
         margin-top: 50px;
         transform:translateX(40px);
         box-shadow: 1px 1px 10px 2px #020220;
-        
     }
 .div2
     {  
@@ -38,8 +37,15 @@ body{
         height: 560px;
         transform:translateX(-40px);
         box-shadow: 1px 1px 10px 2px #020220;
+}
 
-    }
+.fluid{
+    display: block;
+    margin-top: auto;
+    margin-left: 30px;
+    width: 75%;
+}
+
 .form-box{
         margin-top: 10%;
         margin-left:10% ;
