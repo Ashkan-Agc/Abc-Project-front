@@ -1,4 +1,14 @@
 .page-view {
-  background-color: #303667;
-  padding: 20px;
+  background-color: #2b3261;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 20px;
 }
+.page-view > a {
+  color: white;
+  font-weight: 500;
+}
+.nav-link-active {
+  border-bottom: red solid 2px;
+}
+

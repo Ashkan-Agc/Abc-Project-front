@@ -27,7 +27,7 @@
   <!-- END: Page CSS-->
 
   <!-- BEGIN: Custom CSS-->
-  <link rel="stylesheet" type="text/css" href="css/maindash.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="css/performance.css">
   <!-- END: Custom CSS-->
 
@@ -188,17 +188,12 @@
             <div class="row">
               <!-- start assets -->
               <div class="col-lg-12">
-                <div class="nav page-view">
-                  <a href="" class=" col-md-2 col-sm-4 nav-item ucase">overview</a>
-                  <a href="" class=" col-md-2 col-sm-4 nav-item ucase">vulnerability</a>
-                  <a href="" class=" col-md-2 col-sm-4 nav-item ucase">uptime</a>
-                  <a href="performance.html" class=" col-md-2 col-sm-4 nav-item ucase">performance</a>
-                  <a href="" class=" col-md-2 col-sm-4 nav-item ucase">remediation</a>
-                  <!-- <a href=""  class=" col-md-2 col-sm-4 card-title-item ucase">overview</a>
-                    <a href="" class=" col-md-2 col-sm-4 card-title-item ucase">vulnerability</a>
-                    <a href="" class=" col-md-2 col-sm-4 card-title-item ucase">uptime</a>
-                    <a href="performance.html" class=" col-md-2 col-sm-4 card-title-item ucase">performance</a>
-                    <a href="" class=" col-md-2 col-sm-4 card-title-item ucase">remediation</a> -->
+                <div class="nav page-view text-center ">
+                  <a href="" class=" col-md-2 col-sm-4 nav-link ucase">overview</a>
+                  <a href="" class=" col-md-2 col-sm-4 nav-link ucase">vulnerability</a>
+                  <a href="" class=" col-md-2 col-sm-4 nav-link ucase">uptime</a>
+                  <a href="performance.html" class=" col-md-2 col-sm-4 nav-link ucase nav-link-active">performance</a>
+                  <a href="" class=" col-md-2 col-sm-4 nav-link ucase">remediation</a>
                 </div>
               </div>
               <!-- end assets -->
@@ -216,142 +211,7 @@
                     </div>
                   </div>
                   <div class="card-body" style="padding-left: 0;">
-                    <div class="tab">
-                      <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'web')">WEB</button>
-                      <button class="tablinks" onclick="openTab(event, 'email')">EMAIL</button>
-                      <button style="padding-left:12px ; padding-right:12px ;" class="tablinks"
-                        onclick="openTab(event, 'networks')">NETWORK DEVICES</button>
-                      <button class="tablinks" onclick="openTab(event, 'other')">OTHERS</button>
-                    </div>
-                    <div id="web" class="tabcontent">
-                      <div class="card card-alerts card-vulns p-0">
-                        <div class="card-header  border-0-bottom" style=" background-color: #313768;">
-                          <h4 class="card-title ucase">
-                            <span class="card-title-item ucase" style="width:20%">domain</span>
-                            <span class="card-title-item ucase" style="width:25%">security status</span>
-                            <span class="card-title-item ucase" style="width:15%">availability</span>
-                            <span class="card-title-item ucase" style="width:20%">performance</span>
-                            <span class="card-title-item ucase" style="width:15%">last allerts</span>
-                          </h4>
-                          <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                        </div>
-                        <div class="card-content">
-                          <div class="card-body scroll">
-                            <ul class="vuln-list">
-                              <li class="vuln-item align-center">
-                                <span class="card-title-item" style="width:20%">
-                                  <div> cert.uma.ac.ir</div>
-                                  <div>12.58.189.1.1</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:25%">
-                                  <div style="font-weight: 500;" class="ucase warning">critical</div>
-                                  <span class="vuln-count-item bg-critical">1</span>
-                                  <span class="vuln-count-item bg-danger">2</span>
-                                  <span class="vuln-count-item bg-warning">0</span>
-                                  <span class="vuln-count-item bg-success">4</span>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%;font-weight:bold">
-                                  <div>88%</div>
-                                  <div>100 ms</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:20%">
-                                  <div class=" performance"><img src="images/target-up.png" alt=""> 70/100</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%">
-                                  <div>
-                                    10
-                                  </div>
-                                </span>
-                              </li>
-                              <li class="vuln-item align-center">
-                                <span class="card-title-item" style="width:20%">
-                                  <div> cert.uma.ac.ir</div>
-                                  <div>12.58.189.1.1</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:25%">
-                                  <div style="font-weight: 500;" class="ucase warning">critical</div>
-                                  <span class="vuln-count-item bg-critical">1</span>
-                                  <span class="vuln-count-item bg-danger">2</span>
-                                  <span class="vuln-count-item bg-warning">0</span>
-                                  <span class="vuln-count-item bg-success">4</span>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%;font-weight:bold">
-                                  <div>88%</div>
-                                  <div>100 ms</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:20%">
-                                  <div class=" performance"><img src="images/target-up.png" alt=""> 70/100</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%">
-                                  <div>
-                                    10
-                                  </div>
-                                </span>
-                              </li>
-                              <li class="vuln-item align-center">
-                                <span class="card-title-item" style="width:20%">
-                                  <div> cert.uma.ac.ir</div>
-                                  <div>12.58.189.1.1</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:25%">
-                                  <div style="font-weight: 500;" class="ucase warning">critical</div>
-                                  <span class="vuln-count-item bg-critical">1</span>
-                                  <span class="vuln-count-item bg-danger">2</span>
-                                  <span class="vuln-count-item bg-warning">0</span>
-                                  <span class="vuln-count-item bg-success">4</span>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%;font-weight:bold">
-                                  <div>88%</div>
-                                  <div>100 ms</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:20%">
-                                  <div class=" performance"><img src="images/target-up.png" alt=""> 70/100</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%">
-                                  <div>
-                                    10
-                                  </div>
-                                </span>
-                              </li>
-                              <li class="vuln-item align-center">
-                                <span class="card-title-item" style="width:20%">
-                                  <div> cert.uma.ac.ir</div>
-                                  <div>12.58.189.1.1</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:25%">
-                                  <div style="font-weight: 500;" class="ucase warning">critical</div>
-                                  <span class="vuln-count-item bg-critical">1</span>
-                                  <span class="vuln-count-item bg-danger">2</span>
-                                  <span class="vuln-count-item bg-warning">0</span>
-                                  <span class="vuln-count-item bg-success">4</span>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%;font-weight:bold">
-                                  <div>88%</div>
-                                  <div>100 ms</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:20%">
-                                  <div class=" performance"><img src="images/target-up.png" alt=""> 70/100</div>
-                                </span>
-                                <span class="card-title-item ucase" style="width:15%">
-                                  <div>
-                                    10
-                                  </div>
-                                </span>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="email" class="tabcontent">
-                      <h1>TAb</h1>
-                    </div>
-                    <div id="networks" class="tabcontent">
-                      <h1>Tab</h1>
-                    </div>
-                    <div id="other" class="tabcontent">
-                      <h1>tAB</h1>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
