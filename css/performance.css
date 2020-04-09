@@ -1,39 +1,49 @@
 .page-view {
-  background-color: #2b3261;
-  padding: 5px;
-  border-radius: 5px;
+    background-color: #2b3261;
+    padding: 5px;
+    border-radius: 5px;
 }
+
 .page-view > a {
-  color: white;
-  font-weight: 500;
+    color: white;
+    font-weight: 500;
 }
+
 .nav-link-active {
-  border-bottom: red solid 2px;
+    border-bottom: red solid 2px;
 }
+
 #assets {
-  margin: 15px 0px;
+    margin: 15px 0px;
 }
+
 .container p {
-  font-weight: 400;
+    font-weight: 400;
 }
+
 #assets > .col-lg-3 > .card {
-  border-radius: 5px;
-  background-color: #2b3261;
-  height: 120px;
-  color: white;
+    border-radius: 5px;
+    background-color: #2b3261;
+    height: 120px;
+    color: white;
 }
+
 #assets > .col-lg-3 > .card > .container {
-  padding: 15px 0;
+    padding: 15px 0;
 }
+
 #assets .col-lg-3 {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .load-third {
-  color: red;
+    color: red;
 }
+
 .requests-third {
-  color: red;
+    color: red;
 }
+
 .page-size-third {
-  color: aquamarine;
+    color: aquamarine;
 }
