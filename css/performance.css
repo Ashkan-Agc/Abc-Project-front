@@ -12,7 +12,12 @@
 .nav-link-active {
     border-bottom: red solid 2px;
 }
-
+.nav-link:hover{
+    border-bottom: red solid 2px;
+}
+.nav-link:active{
+    border-bottom: red solid 2px;
+}
 #assets {
     margin: 15px 0px;
 }
