@@ -116,7 +116,12 @@ body {
   border-bottom: 1px solid #3b4576;
   line-height: 50px;
 }
-
+.color-line li{
+  border-left: #bc3057 2px solid;
+}
+.zebbra li:nth-child(even) {
+  background-color: #313768;
+}
 .card-vulns .card-body {
   background-color: #323969;
 }
@@ -164,11 +169,11 @@ li.vuln-item {
   background-color: #2b3261;
   color: white;
   border-radius: 20px 20px 0px 0px;
-  border-bottom: 2px solid #333b6b;
+  border-bottom: 2px solid #313768;
 }
 
 .card-alerts .alert-date-sep {
-  border-bottom: 2px solid #333b6b;
+  border-bottom: 2px solid #313768;
   text-align: center;
   font-size: 13px;
   line-height: 25px;

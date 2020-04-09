@@ -1,54 +1,106 @@
 .page-view {
-    background-color: #2b3261;
-    padding: 5px;
-    border-radius: 5px;
+  background-color: #2b3261;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .page-view > a {
-    color: white;
-    font-weight: 500;
+  color: white;
+  font-weight: 500;
 }
 
 .nav-link-active {
-    border-bottom: red solid 2px;
+  border-bottom: red solid 2px;
 }
-.nav-link:hover{
-    border-bottom: red solid 2px;
+.nav-link:hover {
+  border-bottom: red solid 2px;
 }
-.nav-link:active{
-    border-bottom: red solid 2px;
+.nav-link:active {
+  border-bottom: red solid 2px;
 }
 #assets {
-    margin: 15px 0px;
+  margin: 15px 0px;
+}
+.card-vulns .card-header{
+  background-color: #353d6c;
+  padding:13px;
+  margin-left: -10px;
+}
+.vuln-list span{
+    margin-top: 5px;
+}
+.container p {
+  font-weight: 400;
+}
+.top-performance{
+  margin-bottom: 0;
+}
+.top-performance li{
+  background-color: #313768;
+  margin-bottom: 2px;
+}
+.top-performance li span{
+  font-weight: 500;
+  font-size: 13px;
+}
+.top-performance .one{
+  border-left: 3px solid aqua;
+}
+.top-performance .two{
+  border-left: 3px solid yellow;
+}
+.top-performance .three{
+  border-left: 3px solid #bc3057;
+}
+.top-performance .four{
+  border-left: 3px solid aqua;
 }
 
-.container p {
-    font-weight: 400;
+.per-scroll {
+  
+  overflow-y: scroll;
+  height: 300px;
+}
+.per-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.per-scroll ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.per-scroll::-webkit-scrollbar-thumb {
+  float: right;
+  background: #aaa;
+  border-radius: 10px;
+}
+.per-scroll::-webkit-scrollbar-thumb:hover {
+  background: #eee;
 }
 
 #assets > .col-lg-3 > .card {
-    border-radius: 5px;
-    background-color: #2b3261;
-    height: 120px;
-    color: white;
+  border-radius: 5px;
+  background-color: #2b3261;
+  height: 120px;
+  color: white;
 }
 
 #assets > .col-lg-3 > .card > .container {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 #assets .col-lg-3 {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .load-third {
-    color: red;
+  color: red;
 }
 
 .requests-third {
-    color: red;
+  color: red;
 }
 
 .page-size-third {
-    color: aquamarine;
+  color: aquamarine;
 }

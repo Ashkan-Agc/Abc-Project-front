@@ -299,9 +299,8 @@ var options = {
     enabled: false
   },
   fill: {
-    colors:['#543FA2'],
-    opacity:0.7,
-    type:'solid'
+    type: 'solid',
+    colors:['#694ECB']
   },
   xaxis: {
     type: 'datetime',
