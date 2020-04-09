@@ -186,7 +186,7 @@
           <div class="col-lg-9">
 
             <div class="row">
-              <!-- start assets -->
+              <!-- start nav -->
               <div class="col-lg-12">
                 <div class="nav page-view text-center ">
                   <a href="" class=" col-md-2 col-sm-4 nav-link ucase">overview</a>
@@ -196,12 +196,53 @@
                   <a href="" class=" col-md-2 col-sm-4 nav-link ucase">remediation</a>
                 </div>
               </div>
+              <!-- end nav -->
+              <!-- start assets -->
+              <div class="card-body" style="padding: 0;">
+                <div class="row" id="assets">
+                  <div class="col-lg-3">
+                    <div class="card">
+                      <div class="container text-center">
+                        <p class="ucase">performance grade</p>
+                        <p>79/100</p>
+                        <p class="performance-third">no change</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card">
+                      <div class="container text-center">
+                        <p class="ucase">load time</p>
+                        <p>3.46</p>
+                        <p class="load-third">+106ms(3.16ms)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card">
+                      <div class="container text-center">
+                        <p class="ucase">page size</p>
+                        <p>2.76 mb</p>
+                        <p class="page-size-third">-1570(0.0196)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card">
+                      <div class="container text-center">
+                        <p class="ucase">requests</p>
+                        <h2>121</h2>
+                        <p class="requests-third">-106ms(3.16)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- end assets -->
-              <!-- tabs start -->
               <div class="col-lg-12">
                 <div class="card" style="margin-bottom: 0; background-color:#353D6C;">
                   <div class="card-header border-0-bottom" style="padding-left: 0;">
-                    <h4 class="card-title ucase">INFURSTRAUSTURE SUMMARY</h4>
+                    <h6 class="ucase">page load time</h6>
                     <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                     <div class="heading-elements">
                       <ul class="list-inline mb-0">
@@ -211,11 +252,11 @@
                     </div>
                   </div>
                   <div class="card-body" style="padding-left: 0;">
-                    
+
                   </div>
                 </div>
               </div>
-              <!-- tabs ends -->
+
             </div>
           </div>
           <div class="col-lg-3">
@@ -306,7 +347,6 @@
                               <span class="alert-text">an xss is detected</span>
                             </a>
                           </li>
-
                         </ul>
                       </div>
                     </div>
@@ -314,133 +354,22 @@
                 </div>
               </div>
               <!-- end last alert -->
-              <!-- wEB APPS CONDITION -->
               <div class="col-lg-12">
-                <div class="card-header border-0-bottom " style="border-radius: 0; background-color: #353D6C;">
-                  <h4 class="card-title pl-0">WEB APPS CONDITION</h4>
-                </div>
-                <div class="card" style="border-radius:20px; background-color: #313768;">
-                  <div class="card-header border-0-bottom "
-                    style="border-radius: 0; background-color: #313768; border-radius: 20px;">
-                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                    <div class="heading-elements">
-                      <ul class="list-inline mb-0">
-                        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
-                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div id="webappcond"></div>
-                    <div class="webappdetails">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card ">
-                            <div class="container">
-                              <h1 style="color:#EAA323;">40%</h1>
-                              <p style="color:white;" class="ucase">Critical</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card">
-                            <div class="container">
-                              <h1 style="color:#BC3057;">40%</h1>
-                              <p style="color:white;" class="ucase"> high</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card ">
-                            <div class="container">
-                              <h1 style="color:rgb(35, 234, 168);">40%</h1>
-                              <p style="color:white;" class="ucase">medium</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card">
-                            <div class="container">
-                              <h1 style="color:rgb(60, 99, 170);">40%</h1>
-                              <p style="color:white;" class="ucase"> low</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end WeB apps condition card -->
-                <!-- Network device condition card -->
-                <div class="card-header border-0-bottom " style="border-radius: 0; background-color: #353D6C;">
-                  <h4 class="card-title pl-0">NETWORK DEVICES CONDITION</h4>
-                </div>
-                <div class="card" style="border-radius:20px; background-color: #313768;">
-                  <div class="card-header border-0-bottom "
-                    style="border-radius: 0; background-color: #313768; border-radius: 20px;">
-                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                    <div class="heading-elements">
-                      <ul class="list-inline mb-0">
-                        <li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
-                        <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div id="networkcond"></div>
-                    <div class="webappdetails">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card ">
-                            <div class="container">
-                              <h1 style="color:#EAA323;">40%</h1>
-                              <p style="color:white;" class="ucase">Critical</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card">
-                            <div class="container">
-                              <h1 style="color:#BC3057;">40%</h1>
-                              <p style="color:white;" class="ucase"> high</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card ">
-                            <div class="container">
-                              <h1 style="color:rgb(35, 234, 168);">40%</h1>
-                              <p style="color:white;" class="ucase">medium</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
-                          <div class="card">
-                            <div class="container">
-                              <h1 style="color:rgb(60, 99, 170);">40%</h1>
-                              <p style="color:white;" class="ucase"> low</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--end Network device condition card -->
+
               </div>
             </div>
           </div>
         </div>
-        <script src="js/vendors.min.js"></script>
-        <script src="js/app-menu.min.js"></script>
-        <script src="js/app.min.js"></script>
-        <script src="js/dashboard-analytics.min.js"></script>
-        <script src="js/tabs.js"></script>
-        <script src="js/chart/Radial.js"></script>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/app-menu.min.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="js/dashboard-analytics.min.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/chart/Radial.js"></script>
+  <script src="js/chart/pageload.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,6 @@
   background-color: #2b3261;
   padding: 5px;
   border-radius: 5px;
-  margin-right: 20px;
 }
 .page-view > a {
   color: white;
@@ -11,4 +10,30 @@
 .nav-link-active {
   border-bottom: red solid 2px;
 }
-
+#assets {
+  margin: 15px 0px;
+}
+.container p {
+  font-weight: 400;
+}
+#assets > .col-lg-3 > .card {
+  border-radius: 5px;
+  background-color: #2b3261;
+  height: 120px;
+  color: white;
+}
+#assets > .col-lg-3 > .card > .container {
+  padding: 15px 0;
+}
+#assets .col-lg-3 {
+  padding: 0 15px;
+}
+.load-third {
+  color: red;
+}
+.requests-third {
+  color: red;
+}
+.page-size-third {
+  color: aquamarine;
+}
