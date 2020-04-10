@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>performance</title>
+    <title>single scan result</title>
     <link rel="apple-touch-icon" href="images/ico/apple-icon-120.png">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- <script src="js/ApexChart/dist/apexcharts.min.js"></script> -->
@@ -29,6 +29,7 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/performance.css">
+    <link rel="stylesheet" href="css/single-scan-result.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -211,56 +212,27 @@
                                 </div>
                             </div>
                             <!-- end nav -->
-                            <!-- start assets -->
-                            <div class="card-body" style="padding: 0;">
-                                <div class="row" id="assets">
-                                    <div class="col-lg-3">
-                                        <div class="card">
-                                            <div class="container text-center">
-                                                <p class="ucase">performance grade</p>
-                                                <p>79/100</p>
-                                                <p class="performance-third">no change</p>
+                        </div>
+
+                        <!-- last scans -->
+                        <div class="card p-1" style="margin-bottom: 0; background: #353D6C">
+                            <div class="card-header border-0-bottom" style="color:white;">
+                                <!-- search field -->
+                                <div class="row filter-form-container">
+                                    <form class=" col-6 form filter-form" action="" method="get">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                filter
+                                            </div>
+                                            <div class="col-9">
+                                                search
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="card">
-                                            <div class="container text-center">
-                                                <p class="ucase">load time</p>
-                                                <p>3.46</p>
-                                                <p class="load-third">+106ms(3.16ms)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="card">
-                                            <div class="container text-center">
-                                                <p class="ucase">page size</p>
-                                                <p>2.76 mb</p>
-                                                <p class="page-size-third">-1570(0.0196)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="card">
-                                            <div class="container text-center">
-                                                <p class="ucase">requests</p>
-                                                <h2>121</h2>
-                                                <p class="requests-third">-106ms(3.16)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end assets -->
-                            <!-- pageload chart -->
-                            <div class="col-lg-12">
-                                <div class="card" style="margin-bottom: 0; background-color:#353D6C;">
-                                    <div class="card-header border-0-bottom" style="padding-left: 0;">
-                                        <h6 class="ucase">page load time</h6>
+                                    </form>
+                                    <div class="col-6 ">
                                         <a class="heading-elements-toggle"><i
                                                 class="fa fa-ellipsis-v font-medium-3"></i></a>
-                                        <div class="heading-elements">
+                                        <div class=" heading-elements">
                                             <ul class="list-inline mb-0">
                                                 <li><a data-action="expand"><i class="feather icon-maximize"></i></a>
                                                 </li>
@@ -269,36 +241,20 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="card-body" style="padding-left: 0;">
-                                        <div id="pageload"></div>
-                                    </div>
+
                                 </div>
-                            </div>
-                            <!-- page load chart end -->                         
-                        </div>
-                        <!-- last scans -->
-                        <div class="card p-1" style="margin-bottom: 0; background: #353D6C">
-                            <div class="card-header border-0-bottom" style="color:white;">
-                                <h4 class="card-title ucase">last tests</h4>
-                                <a class="heading-elements-toggle"><i
-                                    class="fa fa-ellipsis-v font-medium-3"></i></a>
-                            <div class="heading-elements">
-                                <ul class="list-inline mb-0">
-                                    <li><a data-action="expand"><i class="feather icon-maximize"></i></a>
-                                    </li>
-                                    <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+
+                                <!-- end search field -->
+
                             </div>
                             <div class="card card-alerts card-vulns">
                                 <div class="card-header  border-0-bottom" style="background-color: #2b3261;">
-                                    <h4 class="card-title ucase" >
+                                    <h4 class="card-title ucase">
                                         <span class="card-title-item ucase" style="width:20%">date & time</span>
                                         <span class="card-title-item ucase" style="width:20%">load time</span>
                                         <span class="card-title-item ucase" style="width:15%">page size</span>
                                         <span class="card-title-item ucase" style="width:15%">requests</span>
-                                        <span class="card-title-item ucase" style="width:20%">pref grade</span>                                       
+                                        <span class="card-title-item ucase" style="width:20%">pref grade</span>
                                     </h4>
                                     <a class="heading-elements-toggle"><i
                                             class="fa fa-ellipsis-v font-medium-3"></i></a>
@@ -306,90 +262,102 @@
                                 <div class="card-content">
                                     <div class="card-body scroll">
                                         <ul class="vuln-list zebbra">
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
-                                            <li class="vuln-item">                                            
-                                                <span class="card-title-item" style="width:20%">2020-04-13 14:30:29</span>
+                                            </li>
+                                            <li class="vuln-item">
+                                                <span class="card-title-item" style="width:20%">2020-04-13
+                                                    14:30:29</span>
                                                 <span class="card-title-item ucase" style="width:20%">2.45s</span>
                                                 <span class="card-title-item ucase" style="width:15%">2.75mb</span>
                                                 <span class="card-title-item ucase" style="width:15%">124</span>
                                                 <span class="card-title-item ucase" style="width:20%">70/100</span>
-                                            </li>                                         
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -502,53 +470,60 @@
                                 <div class="card card-alerts card-vulns">
                                     <div class="card-header  border-0-bottom">
                                         <h4 class="card-title ucase">
-                                            top performance issues                                      
+                                            top performance issues
                                         </h4>
                                         <a class="heading-elements-toggle"><i
                                                 class="fa fa-ellipsis-v font-medium-3"></i></a>
                                     </div>
-                                    <div class="card-content" >
+                                    <div class="card-content">
                                         <div class="card-body per-scroll" style="background-color: #3B4576;">
                                             <ul class="vuln-list top-performance">
-                                                <li class="vuln-item one">                                            
-                                                    <span class="card-title-item ucase" style="width:84%">minimize redirects</span>
-                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>                                                   
-                                                </li>                                                                                
-                                                <li class="vuln-item two">                                            
-                                                    <span class="card-title-item ucase" style="width:84%">minimize redirects</span>
-                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>                                                   
-                                                </li>                                                                                
-                                                <li class="vuln-item three">                                            
-                                                    <span class="card-title-item ucase" style="width:84%">minimize redirects</span>
-                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>                                                   
-                                                </li>                                                                                
-                                                <li class="vuln-item four">                                            
-                                                    <span class="card-title-item ucase" style="width:84%">minimize redirects</span>
-                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>                                                   
-                                                </li>                                                                                                               
-                                                <li class="vuln-item two">                                            
-                                                    <span class="card-title-item ucase" style="width:84%">minimize redirects</span>
-                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>                                                   
-                                                </li>                                                                                
-                                                <li class="vuln-item three">                                            
-                                                    <span class="card-title-item ucase" style="width:84%">minimize redirects</span>
-                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>                                                   
-                                                </li>                                                                                
-                                                <li class="vuln-item four">                                            
-                                                    <span class="card-title-item ucase" style="width:84%">minimize redirects</span>
-                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>                                                   
-                                                </li>                                                                                                               
+                                                <li class="vuln-item one">
+                                                    <span class="card-title-item ucase" style="width:84%">minimize
+                                                        redirects</span>
+                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>
+                                                </li>
+                                                <li class="vuln-item two">
+                                                    <span class="card-title-item ucase" style="width:84%">minimize
+                                                        redirects</span>
+                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>
+                                                </li>
+                                                <li class="vuln-item three">
+                                                    <span class="card-title-item ucase" style="width:84%">minimize
+                                                        redirects</span>
+                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>
+                                                </li>
+                                                <li class="vuln-item four">
+                                                    <span class="card-title-item ucase" style="width:84%">minimize
+                                                        redirects</span>
+                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>
+                                                </li>
+                                                <li class="vuln-item two">
+                                                    <span class="card-title-item ucase" style="width:84%">minimize
+                                                        redirects</span>
+                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>
+                                                </li>
+                                                <li class="vuln-item three">
+                                                    <span class="card-title-item ucase" style="width:84%">minimize
+                                                        redirects</span>
+                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>
+                                                </li>
+                                                <li class="vuln-item four">
+                                                    <span class="card-title-item ucase" style="width:84%">minimize
+                                                        redirects</span>
+                                                    <span class="card-title-item ucase" style="width:12%">f(30)</span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="js/vendors.min.js"></script>
     <script src="js/app-menu.min.js"></script>
