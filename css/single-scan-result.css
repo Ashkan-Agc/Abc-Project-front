@@ -1,8 +1,47 @@
-.filter-form-container{
-   
-    margin: 40px auto 0;
+.filter-form-container .col-6 {
+  padding: 0;
+}
+.severitydetails {
+  padding: 0;
+}
+.severitydetails .card {
+  margin: 0;
+  border-radius: 6px;
+  background-color: #313768;
+  border: 1px solid #358df2;
 }
 
-.filter-form{
-    background-color: blueviolet;
+.filter-form {
+  height: 45px; 
+  border: 2px solid #3b4576;
+  padding: 0px 20px;
+  border-radius: 5px;
 }
+
+.filter-form .row .col-9{
+    height: 100%;
+    border-left: 1px solid white;
+}
+.table-card{
+  background-color: #353d6c;
+}
+/* table{
+  margin-top: 20px;
+}
+tr{
+    color: white;
+    font-size: 13px;
+}
+td,th{
+   height: 50px;
+   padding: 10px 10px;
+}
+th{
+  background-color: #31396d;
+}
+tr:nth-child(even) {
+    background-color: #31396d;
+  }
+tr:nth-child(odd) {
+    background-color: #3b4576;
+  } */

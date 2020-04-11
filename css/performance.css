@@ -8,18 +8,20 @@
   color: white;
   font-weight: 500;
 }
-
+/* .title span{
+  padding: 20px;
+} */
 .nav-link-active {
-  border-bottom: red solid 2px;
+  border-bottom: palevioletred solid 2px;
 }
 .nav-link:hover {
-  border-bottom: red solid 2px;
+  border-bottom: palevioletred solid 2px;
 }
 .nav-link:active {
-  border-bottom: red solid 2px;
+  border-bottom: palevioletred solid 2px;
 }
 #assets {
-  margin: 15px 0px;
+  margin: 15px 0px; 
 }
 .card-vulns .card-header{
   background-color: #353d6c;

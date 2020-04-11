@@ -1,7 +1,7 @@
 var options = {
-    series: [80, 69, 51],
+    series: [44, 55, 67, 83],
     chart: {
-        height: 100,
+        height: 350,
         type: 'radialBar',
         background: '#313768',
         toolbar: {
@@ -15,7 +15,7 @@ var options = {
     plotOptions: {
         radialBar: {
           hollow:{
-            size: '50%',
+            size: '40%',
             background: 'transparent',
           },
           track: {
@@ -51,7 +51,7 @@ var options = {
     track: {
         background: '#313768',
         strokeWidth: 0.3,
-        margin: 50, // margin is in pixels
+        margin: 100, // margin is in pixels
         dropShadow: {
             enabled: false,
             top: -3,
@@ -61,24 +61,21 @@ var options = {
         }
     },
     fill: {
-        colors: ['#2951D5','#9b2ebf', '#F45B35'],
+        colors: ['#E6607B','#2951D5','#9b2ebf', '#F45B35',],
         type: 'gradient',
         gradient: {
             shade: 'dark',
             shadeIntensity: 100,
             type: 'vertical',
             opacityFrom: 1,
-            gradientToColors: ['#65AB9A','#f135f4', '#F6B154'],
+            gradientToColors: ['#ED4E73','#65AB9A','#f135f4', '#F6B154'],
             opacityTo: 1,
             stops: [0, 100]
         }
     },
-    labels: ['Apples', 'Oranges', 'Bananas'],
+    labels: ['Apples', 'Oranges', 'Bananas','berry'],
 };
 
 
-var chart = new ApexCharts(document.querySelector("#webappcond"), options);
-chart.render();
-
-var chart = new ApexCharts(document.querySelector("#networkcond"), options);
+var chart = new ApexCharts(document.querySelector("#severitydetails"), options);
 chart.render();
