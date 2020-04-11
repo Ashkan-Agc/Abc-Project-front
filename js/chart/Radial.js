@@ -1,7 +1,7 @@
 var options = {
     series: [80, 69, 51],
     chart: {
-        height: 100,
+        height: 300,
         type: 'radialBar',
         background: '#313768',
         toolbar: {
