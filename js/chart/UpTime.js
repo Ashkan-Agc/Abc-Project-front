@@ -1,3 +1,10 @@
+/*
+developed by Ashkan Ganj
+Github: @Ashkan-Agc 
+Email: agc.ashkan79@gmail.com
+
+ */
+
 var options = {
     series: [
         {

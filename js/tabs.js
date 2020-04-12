@@ -1,3 +1,10 @@
+/*
+developed by Ashkan Ganj
+Github: @Ashkan-Agc 
+Email: agc.ashkan79@gmail.com
+
+ */
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

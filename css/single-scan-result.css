@@ -1,3 +1,10 @@
+/*
+developed by Ashkan Ganj
+Github: @Ashkan-Agc 
+Email: agc.ashkan79@gmail.com
+
+ */
+
 .filter-form-container .col-6 {
   padding: 0;
 }
@@ -12,36 +19,92 @@
 }
 
 .filter-form {
-  height: 45px; 
+  height: 45px;
   border: 2px solid #3b4576;
   padding: 0px 20px;
   border-radius: 5px;
 }
 
-.filter-form .row .col-9{
-    height: 100%;
-    border-left: 1px solid white;
+.filter-form .row .col-9 {
+  height: 100%;
+  border-left: 1px solid white;
 }
-.table-card{
+.table-card {
   background-color: #353d6c;
 }
-/* table{
-  margin-top: 20px;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
-tr{
-    color: white;
-    font-size: 13px;
+tr {
+  color: white;
+  font-size: 13px;
 }
-td,th{
-   height: 50px;
-   padding: 10px 10px;
+td,
+th {
+  height: 50px;
+  padding: 10px 10px;
+  
 }
-th{
+th {
   background-color: #31396d;
 }
 tr:nth-child(even) {
-    background-color: #31396d;
-  }
+  background-color: #31396d;
+}
 tr:nth-child(odd) {
-    background-color: #3b4576;
-  } */
+  background-color: #3b4576;
+}
+
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
+.input-group{
+  width: 40%;
+  margin: 10px 0 0 0;
+  padding: 0;
+  border-radius: 10px;
+}
+.input-group input{
+  width: 40%;
+  background-color: #353d6c;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 0 5px 5px 0;
+}
+.input-group input:hover{
+  background-color: #353d6c;
+  border: 1px solid #aaa;
+
+}
+.input-group input:focus{
+  background-color: #353d6c;
+  border: 1px solid #fff;
+}
+.btn{
+  color: white;
+  border-radius: 0;
+  border: 1px solid #aaa;
+  border-radius: 5px 0 0  5px ;
+}
+.btn:hover{
+  background-color: #353d6c;
+}

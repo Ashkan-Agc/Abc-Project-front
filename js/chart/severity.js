@@ -1,3 +1,10 @@
+/*
+developed by Ashkan Ganj
+Github: @Ashkan-Agc 
+Email: agc.ashkan79@gmail.com
+
+ */
+
 var options = {
     series: [44, 55, 67, 83],
     chart: {

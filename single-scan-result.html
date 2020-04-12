@@ -10,35 +10,17 @@
     <link rel="apple-touch-icon" href="images/ico/apple-icon-120.png">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- <script src="js/ApexChart/dist/apexcharts.min.js"></script> -->
-    <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
-    <!-- END: Vendor CSS-->
-
-    <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.min.css">
     <link rel="stylesheet" type="text/css" href="css/colors.min.css">
     <link rel="stylesheet" type="text/css" href="css/components.min.css">
-    <!-- END: Theme CSS-->
-
-    <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="css/vertical-menu-modern.css">
-
-
-    <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/performance.css">
     <link rel="stylesheet" href="css/single-scan-result.css">
-    <!-- <link rel="stylesheet" href="css/maindash.css"> -->
-    <!-- END: Custom CSS-->
-    <script type="text/javascript" src="js/filter-sort-jquery/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript" src="js/filter-sort-jquery/jquery.tablesorter.min.js"></script>
-    <script type="text/javascript" src="js/filter-sort-jquery/jquery.tablesorter.widgets.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#myTable").tablesorter({ sortList: [[0, 0], [1, 0]] });
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <!-- END: Head-->
 
@@ -223,8 +205,8 @@
                         </div>
 
                         <!-- last scans -->
-                        <div class="card" style="margin-bottom: 0; background: #353D6C">
-                            <div class="card-header border-0-bottom" style="color:white;">
+                        <div class="card" style="margin-bottom: 0; background: #353D6C;">
+                            <div class="card-header border-0-bottom" style="color:white; padding: 30px 0 0 0 ;">
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class=" heading-elements">
                                     <ul class="list-inline mb-0">
@@ -235,164 +217,144 @@
                                     </ul>
                                 </div>
                                 <!-- search field -->
-                                <div class="row filter-form-container">
-                                    <div class="col-2">filter</div>
-                                    <div class=" col-7 ">
-                                        <input type="text" id="myInput" onkeyup="myFunction()"
-                                            placeholder="Search for names.." title="Type in a name">
+                                <!-- <div class="filter-form-container">
+                                    <span class="">
+                                        <select id="mylist" onchange="myFunction()" class=''>
+                                            <option>Name</option>
+                                            <option>Sev</option>
+                                            <option>Family</option>
+                                            <option>Count</option>
+                                        </select>
+                                    </span>
+                                    <span class="">
+                                       <input id="myInput" type="text" placeholder="Search"> 
+                                    </span>
+                                    <span class="">
+                                        vulnerability
+                                    </span>
+                                </div> -->
+                                <div class="input-group mb-3">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Filter</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Name</a>
+                                            <a class="dropdown-item" href="#">family</a>
+                                            <a class="dropdown-item" href="#">sev</a>
+                                        </div>
                                     </div>
-                                    <div class="col-2">
-                                        128 vulnerability
-                                    </div>
+                                    <input id="myInput" type="text" class="form-control"
+                                        placeholder="search vulnerability" aria-label=""
+                                        aria-describedby="basic-addon1">
                                 </div>
-
                                 <!-- end search field -->
                             </div>
-                            <table id="myTable" class="tablesorter">
+                            <table class="table-sortable" id="myTable">
                                 <thead>
-                                  <tr>
-                                    <th>Last Name</th>
-                                    <th>First Name</th>
-                                    <th>Email</th>
-                                    <th>Due</th>
-                                    <th>Web Site</th>
-                                  </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th class="ucase">sev</thcla>
+                                        <th class="ucase">name</th>
+                                        <th class="ucase">family</th>
+                                        <th class="ucase">count</th>
+                                        <th></th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>
-                                    <td>Smith</td>
-                                    <td>John</td>
-                                    <td>jsmith@gmail.com</td>
-                                    <td>$50.00</td>
-                                    <td>http://www.jsmith.com</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Bach</td>
-                                    <td>Frank</td>
-                                    <td>fbach@yahoo.com</td>
-                                    <td>$50.00</td>
-                                    <td>http://www.frank.com</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Doe</td>
-                                    <td>Jason</td>
-                                    <td>jdoe@hotmail.com</td>
-                                    <td>$100.00</td>
-                                    <td>http://www.jdoe.com</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Conway</td>
-                                    <td>Tim</td>
-                                    <td>tconway@earthlink.net</td>
-                                    <td>$50.00</td>
-                                    <td>http://www.timconway.com</td>
-                                  </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>2</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>2</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkBox"></td>
+                                        <td>Critical</td>
+                                        <td>Bash Incomplete Fix Remote code Execution</td>
+                                        <td>Gain a shell remotely</td>
+                                        <td>2</td>
+                                        <td></td>
+                                    </tr>
                                 </tbody>
-                              </table>
+                            </table>
                             <!-- <div class="card table-card" style="overflow-X:auto;"> -->
-                                <!-- <table id="vulnerabilitySort" class="tablesorter">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th class="ucase">sev</thcla>
-                                            <th class="ucase">name</th>
-                                            <th class="ucase">family</th>
-                                            <th class="ucase">count</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkBox"></td>
-                                            <td>Critical</td>
-                                            <td>Bash Incomplete Fix Remote code Execution</td>
-                                            <td>Gain a shell remotely</td>
-                                            <td>1</td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table> -->
-                                
+                            <!--  -->
+
                             <!-- </div> -->
 
                         </div>
@@ -573,7 +535,7 @@
     <script src="js/app-menu.min.js"></script>
     <script src="js/app.min.js"></script>
     <script src="js/chart/severity.js"></script>
-    <!-- <script src="js/tablesort.js"></script> -->
+    <script src="js/tablesort.js"></script>
 </body>
 
 </html>
