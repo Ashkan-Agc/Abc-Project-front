@@ -98,6 +98,7 @@ tr:nth-child(odd) {
 .input-group input:focus{
   background-color: #353d6c;
   border: 1px solid #fff;
+  color: white;
 }
 .btn{
   color: white;
