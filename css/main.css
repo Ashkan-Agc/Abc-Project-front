@@ -225,7 +225,7 @@ li.vuln-item {
 .ucase {
   text-transform: uppercase;
 }
-.warning{
+/* .warning{
   background-color: #eaa323 !important;
 }
 
@@ -235,4 +235,4 @@ li.vuln-item {
 
 .success{
   background-color: cadetblue !important;
-}
+} */
