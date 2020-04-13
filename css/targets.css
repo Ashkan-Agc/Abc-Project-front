@@ -1,4 +1,40 @@
-.card-event .card-header{
-    background-color: #353d6c;
-    
+.card-event .card-header {
+  background-color: #353d6c;
+  padding-left: 0;
+}
+.event-list {
+  color: white;
+  list-style-type: none;
+  background-color: #313768;
+  padding: 0;
+}
+.event-list li {
+  padding: 15px 0;
+  padding-left: 20px;
+  padding-right: 0;
+  margin: 8px 8px 8px 0;
+  background-color: #3b4576;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.unsuccessful{
+    border-left:2px solid tomato;
+    margin-right: 10px;
+}
+.seccessfull{
+    height: 90%;
+    border-left:2px solid aqua
+}
+.unsuccessful span:last-child{
+    color: tomato;
+
+}
+.seccessfull span:last-child{
+    color: aqua;
+}
+.card-vulns ul{
+    padding: 20px;
+}
+.vuln-list li{
+    padding: 5px;
 }
