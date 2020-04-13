@@ -19,13 +19,16 @@ Email: agc.ashkan79@gmail.com
   padding: 20px;
 } */
 .nav-link-active {
-  border-bottom: palevioletred solid 2px;
+  border-bottom: indianred solid 2px;
+  width: 70%;
 }
 .nav-link:hover {
-  border-bottom: palevioletred solid 2px;
+  border-bottom: indianred solid 2px;
+  width: 70%;
 }
 .nav-link:active {
-  border-bottom: palevioletred solid 2px;
+  border-bottom: indianred solid 2px;
+  width: 70%;
 }
 #assets {
   margin: 15px 0px; 

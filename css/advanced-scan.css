@@ -1,0 +1,51 @@
+.form-card {
+  margin: 20px 0;
+  background-color: #2b3261;
+}
+.card {
+  margin: 20px 0;
+  background-color: #2b3261;
+  border-radius: 0;
+}
+.card-header {
+  background-color: #2b3261;
+}
+.side-container{
+  border: 1px solid #aaa;
+  height: 100%;
+}
+.side-container a,.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  border: 1px solid #aaa;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 20px 20px;  
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #2b3261;
+  border: none;
+
+}
+/* .dropdown-container a {
+    display: none;
+    background-color: #2b3261;
+    border: none;
+    
+  } */
+.fa-caret-right {
+  float: right;
+  padding-right: 8px;
+  color: tomato;
+}
+.main-form-card{
+  height:500px ;
+}

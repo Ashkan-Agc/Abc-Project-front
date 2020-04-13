@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Targets</title>
+    <link rel="apple-touch-icon" href="images/ico/apple-icon-120.png">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vertical-menu-modern.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/single-scan-result.css">
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar menu-collapsed" data-open="click"
+    data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-semi-dark navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-lg-none mr-auto"><a
+                            class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                class="feather icon-menu font-large-1"></i></a></li>
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo"
+                                alt="stack admin logo" src="images/logo.png" height="30">
+                            <h2 class="brand-text">APA </h2>
+
+                        </a></li>
+                    <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0"
+                            data-toggle="collapse"><i class="toggle-icon feather icon-toggle-right font-medium-3 white"
+                                data-ticon="feather.icon-toggle-right"></i></a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+                            data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <div class="text-white">WEB APPLICATION ANALYSIS DASHBOARD</div>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
+                                data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span
+                                    class="badge badge-pill badge-danger badge-up">5</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span
+                                            class="grey darken-2">Notifications</span><span
+                                            class="notification-tag badge badge-danger float-right m-0">5 New</span>
+                                    </h6>
+                                </li>
+                                <li class="scrollable-container media-list"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="feather icon-plus-square icon-bg-circle bg-cyan"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">You have new order!</h6>
+                                                <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor
+                                                    sit amet, consectetuer
+                                                    elit.</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">30 minutes
+                                                        ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="feather icon-download-cloud icon-bg-circle bg-red bg-darken-1"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading red darken-1">99% Server load</h6>
+                                                <p class="notification-text font-small-3 text-muted">Aliquam tincidunt
+                                                    mauris eu risus.</p>
+                                                <small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Five hour
+                                                        ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="feather icon-alert-triangle icon-bg-circle bg-yellow bg-darken-3"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                                                <p class="notification-text font-small-3 text-muted">Vestibulum auctor
+                                                    dapibus neque.</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="feather icon-check-circle icon-bg-circle bg-cyan"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Complete the task</h6><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Last
+                                                        week</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="feather icon-file icon-bg-circle bg-teal"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Generate monthly report</h6><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Last
+                                                        month</time></small>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center"
+                                        href="javascript:void(0)">Read all notifications</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown dropdown-user nav-item"><a
+                                class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="avatar avatar-online"><img src="images/user.png" alt="avatar"><i></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="login.html"><i class="feather icon-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="app-email.html"><i class="feather icon-mail"></i><span class="menu-title"
+                            data-i18n="Email Application">Home</span></a>
+                </li>
+                <li class=" nav-item"><a href="dashboard.html"><i class="feather icon-message-square"></i><span
+                            class="menu-title" data-i18n="Chat Application">web dashboard</span></a>
+                </li>
+                <li class=" nav-item"><a href="app-todo.html"><i class="feather icon-check-square"></i><span
+                            class="menu-title" data-i18n="Todo Application">Targets</span></a>
+                </li>
+                <li class=" nav-item"><a href="maindash.html"><i class="feather icon-check-square"></i><span
+                            class="menu-title" data-i18n="Todo Application">Main dashboard</span></a>
+                </li>
+                <li class=" nav-item"><a href="app-kanban.html"><i class="feather icon-file-plus"></i><span
+                            class="menu-title" data-i18n="Kanban Application">Scans</span></a>
+                </li>
+                <li class=" nav-item"><a href="app-networks.html"><i class="feather icon-users"></i><span
+                            class="menu-title" data-i18n="networks">User profile</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- Analytics spakline & chartjs  -->
+
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- for summary -->
+                                <div class="card summary-card">
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class=" col-lg-4 ">
+                                                    <div class="row">
+                                                        <div class="col-lg-7">
+                                                            <div class="small-head ucase">
+                                                                Vulnerabilities
+                                                            </div>
+                                                            <div class="small-head-number">
+                                                                9.2k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 card-sep">
+                                                            <div class="small-head ucase">
+                                                                severity
+                                                            </div>
+                                                            <div class="small-head-sub-number ">
+                                                                <div>
+                                                                    <span class="text-danger mr-1">337</span>
+                                                                    <span>Critical</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="text-warning mr-1">2.5K</span>
+                                                                    <span>High</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-4 ">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="small-head ucase">
+                                                                web applications
+                                                            </div>
+                                                            <div class="small-head-number">
+                                                                3.5k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 card-sep">
+                                                            <div class="small-head ucase">
+                                                                detections
+                                                            </div>
+                                                            <div class="small-head-sub-number ">
+                                                                <div>
+                                                                    <span class="mr-1">12</span>
+                                                                    <span class="ucase">Last 30 days</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="mr-1">55</span>
+                                                                    <span class="ucase">last 7 days</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-4 ">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="small-head ucase">
+                                                                scans (90 days)
+                                                            </div>
+                                                            <div class="small-head-number">
+                                                                1.1K
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="small-head ucase">q
+                                                                type
+                                                            </div>
+                                                            <div class="small-head-sub-number ">
+                                                                <div>
+                                                                    <span class="text-success mr-1">82%</span>
+                                                                    <span>NETWORK</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="text-danger mr-1">18%</span>
+                                                                    <span>WEB</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+
+                            </div>
+                            <div class="col-lg-12">
+
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- scan results -->
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <!-- scan results -->
+                                <div class="card" style="margin-bottom: 0; background: #353D6C">
+                                    <div class="card-header border-0-bottom" style="color:white;">
+                                        <h4 class="card-title ucase">last scan results</h4>
+                                        <a class="heading-elements-toggle"><i
+                                                class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                        <div class="heading-elements">
+                                            <ul class="list-inline mb-0">
+                                                <li><a data-action="expand"><i class="feather icon-maximize"></i></a>
+                                                </li>
+                                                <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card card-alerts card-vulns">
+                                        <div class="card-header  border-0-bottom">
+                                            <h4 class="card-title ucase">
+                                                <span class="card-title-item ucase" style="width:5%"></span>
+                                                <span class="card-title-item ucase" style="width:25%">target</span>
+                                                <span class="card-title-item ucase" style="width:10%">type</span>
+                                                <span class="card-title-item ucase" style="width:10%">uptime</span>
+                                                <span class="card-title-item ucase" style="width:10%">up since</span>
+                                                <span class="card-title-item ucase text-center"
+                                                    style="width:30%">response time</span>
+                                            </h4>
+                                            <a class="heading-elements-toggle"><i
+                                                    class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-body scroll">
+                                                <ul class="vuln-list zebbra">
+                                                    <li class="vuln-item ">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-up.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+                                                            <div id="uptime1"></div>
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-up.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+                                                            <div id="uptime1"></div>
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-up.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+                                                            <div id="uptime1"></div>
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-up.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+                                                            <div id="uptime1"></div>
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-up.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-down.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-down.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-down.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-down.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-down.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-down.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                    <li class="vuln-item">
+                                                        <span class="card-title-item ucase" style="width:5%"><img
+                                                                width="18" src="images/target-down.png" alt=""></span>
+                                                        <span class="card-title-item"
+                                                            style="width:25%">cert.uma.ac.ir</span>
+                                                        <span class="card-title-item ucase"
+                                                            style="width:10%">HTTP</span>
+                                                        <span class="card-title-item ucase" style="width:10%">96%</span>
+                                                        <span class="card-title-item ucase" style="width:10%">5
+                                                            month</span>
+                                                        <span class="card-title-item ucase" style="width:30%">
+
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card" style="border-radius:20px; background-color: #313768;">
+                                            <div class="card-header border-0-bottom "
+                                                style="border-radius: 0; background-color: #313768; border-radius: 20px;">
+                                                <h4 class="ucase">web server</h4>
+                                                <a class="heading-elements-toggle"><i
+                                                        class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                                <div class="heading-elements">
+                                                    <ul class="list-inline mb-0">
+                                                        <li><a data-action="expand"><i
+                                                                    class="feather icon-maximize"></i></a>
+                                                        </li>
+                                                        <li><a data-action="reload"><i
+                                                                    class="feather icon-rotate-cw"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div id="webserver"></div>
+                                                <div class="severitydetails">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:#EAA323;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">apache</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:#BC3057;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">nginx</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(35, 234, 168);">40%</h1>
+                                                                    <p style="color:white;" class="ucase">lls</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(60, 99, 170);">40%</h1>
+                                                                    <p style="color:white;" class="ucase">others</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card" style="border-radius:20px; background-color: #313768;">
+                                            <div class="card-header border-0-bottom "
+                                                style="border-radius: 0; background-color: #313768; border-radius: 20px;">
+                                                <h4 class="ucase">programming language</h4>
+                                                <a class="heading-elements-toggle"><i
+                                                        class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                                <div class="heading-elements">
+                                                    <ul class="list-inline mb-0">
+                                                        <li><a data-action="expand"><i
+                                                                    class="feather icon-maximize"></i></a>
+                                                        </li>
+                                                        <li><a data-action="reload"><i
+                                                                    class="feather icon-rotate-cw"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div id="programmingLNG"></div>
+                                                <div class="severitydetails">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:#EAA323;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">php</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:#BC3057;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">asp.net</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(35, 234, 168);">40%</h1>
+                                                                    <p style="color:white;" class="ucase">python</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(60, 99, 170);">40%</h1>
+                                                                    <p style="color:white;" class="ucase">others</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card" style="border-radius:20px; background-color: #313768;">
+                                            <div class="card-header border-0-bottom "
+                                                style="border-radius: 0; background-color: #313768; border-radius: 20px;">
+                                                <h4>operating system</h4>
+                                                <a class="heading-elements-toggle"><i
+                                                        class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                                <div class="heading-elements">
+                                                    <ul class="list-inline mb-0">
+                                                        <li><a data-action="expand"><i
+                                                                    class="feather icon-maximize"></i></a>
+                                                        </li>
+                                                        <li><a data-action="reload"><i
+                                                                    class="feather icon-rotate-cw"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div id="operating-system"></div>
+                                                <div class="severitydetails">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:#EAA323;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">windows</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:#BC3057;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">linux</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(35, 234, 168);">40%</h1>
+                                                                    <p style="color:white;" class="ucase">ubuntu</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(60, 99, 170);">40%</h1>
+                                                                    <p style="color:white;" class="ucase"> others</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card" style="border-radius:20px; background-color: #313768;">
+                                            <div class="card-header border-0-bottom "
+                                                style="border-radius: 0; background-color: #313768; border-radius: 20px;">
+                                                <a class="heading-elements-toggle"><i
+                                                        class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                                <div class="heading-elements">
+                                                    <ul class="list-inline mb-0">
+                                                        <li><a data-action="expand"><i
+                                                                    class="feather icon-maximize"></i></a>
+                                                        </li>
+                                                        <li><a data-action="reload"><i
+                                                                    class="feather icon-rotate-cw"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-body" style="margin-top: 26px;">
+                                                <div id="frameworks"></div>
+                                                <div class="severitydetails">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:#EAA323;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">django</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:#BC3057;">40%</h1>
+                                                                    <p style="color:white;" class="ucase">laravel</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card ">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(35, 234, 168);">40%</h1>
+                                                                    <p style="color:white;" class="ucase">yill</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                                            <div class="card">
+                                                                <div class="container">
+                                                                    <h1 style="color:rgb(60, 99, 170);">40%</h1>
+                                                                    <p style="color:white;" class="ucase">others</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </!DOCTYPE>
+                    <div class="col-lg-3">
+                        <div class="row">
+                            <!-- alerts -->
+                            <div class="col-lg-12">
+                                <div class="card card-alerts">
+                                    <div class="card-header  border-0-bottom">
+                                        <h4 class="card-title ucase">latest alerts</h4>
+                                        <a class="heading-elements-toggle"><i
+                                                class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                        <div class="heading-elements">
+                                            <ul class="list-inline mb-0">
+                                                <li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <div id="goal-list-scroll"
+                                                class="table-responsive height-350 position-relative">
+                                                <ul class="alert-list">
+                                                    <li class="alert-date-sep">
+                                                        (2020/4/5)
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/bug-alert-orange.png" alt=""
+                                                                    width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/down-alert-red.png" alt="" width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/bug-alert-orange.png" alt=""
+                                                                    width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="alert-date-sep">
+                                                        (2020/4/3)
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="alert-item">
+                                                        <a href="#">
+                                                            <span class="alert-logo">
+                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                            </span>
+                                                            <span class="alert-text">an xss is detected</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- top vulns -->
+                            <div class="col-lg-12">
+                                <div class="card card-alerts card-vulns">
+                                    <div class="card-header  border-0-bottom">
+                                        <h4 class="card-title ucase">system events</h4>
+                                        <a class="heading-elements-toggle"><i
+                                                class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </!DOCTYPE>
+                        </!DOCTYPE>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vendors.min.js"></script>
+    <script src="js/app-menu.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/chart/UpTime.js"></script>
+    <script src="js/dashboard-analytics.min.js"></script>
+    <script src="js/chart/targets.js"></script>
+
+</body>
+
+</html>
