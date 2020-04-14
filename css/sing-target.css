@@ -1,0 +1,39 @@
+.last-scan-list {
+    padding: 10px;
+}
+
+.last-scan-item {
+    height: 40px;
+    background-color: #3B4576;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.last-scan-item span {
+    margin-top: 6px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.vuln-count-item {
+    padding: 1px 5px;
+}
+
+.card-vulns > .card-header {
+    border-radius: 15px;
+    background-color: #313768;
+}
+
+.vuln-trend-card .card-header, .vuln-family-card .card-header {
+    background-color: #313768;
+
+}
+
+.vuln-trend-card, .vuln-family-card {
+    /*background-color: #353D6C;*/
+    border-radius: 15px;
+    margin-bottom: 3px;
+}
+.vuln-family-card .card-body , .vuln-trend-card .card-body{
+    background-color: #313768;
+}
