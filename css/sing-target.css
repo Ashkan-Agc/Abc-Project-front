@@ -29,11 +29,6 @@
 
 }
 
-.vuln-trend-card, .vuln-family-card {
-    /*background-color: #353D6C;*/
-    border-radius: 15px;
-    margin-bottom: 3px;
-}
 .vuln-family-card .card-body , .vuln-trend-card .card-body{
     background-color: #313768;
 }
