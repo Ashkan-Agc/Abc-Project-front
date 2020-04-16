@@ -35,7 +35,8 @@ var options = {
         stacked: true,
         toolbar: {
             show: false
-        }
+        },
+        colors:'#fff'
     },
     title: {
         text: 'LAST 10 ANALYSIS',
