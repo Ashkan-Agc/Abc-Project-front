@@ -433,8 +433,8 @@
                             <!-- end last scans -->
                             <!-- start charts -->
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="card vuln-trend-card">
+                                <div class="col-lg-6 vuln-trend-card">
+                                    <div class="card ">
                                         <div class="card-header">
                                             <h6 class="ucase">vulnerability detection trend</h6>
                                         </div>
@@ -448,20 +448,67 @@
                                         <div class="card-header">
                                             <h6 class="ucase">vulnerability family</h6>
                                         </div>
-                                        <div class="card-body"></div>
+                                        <div class="card-body" id="VulnerabilityFamily"></div>
                                     </div>
                                 </div>
                             </div>
                             <!-- end -->
                             <!-- up time chart -->
                             <div class="row">
-                                <div class="col-12"></div>
+                                <div class="card-header">
+                                    <h6 class="ucase">vulnerability family</h6>
+                                </div>
+                                <div class="col-12" id="last10dayschart"></div>
                             </div>
                             <!-- end -->
                             <!-- START  performance charts -->
                             <div class="row">
-                                <div class="col-lg-6"></div>
-                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6 perfomance-issue">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6 class="ucase">Performance issue</h6>
+                                        </div>
+                                        <div class="card-body" style="padding: 0">
+
+                                            <div class="perfomance-issue-items">
+                                                <span class="ucase">minimize redirects</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                         aria-valuemin="0" aria-valuemax="100">100%
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="perfomance-issue-items">
+                                                <span class="ucase">serve scaled images</span>
+                                                <span></span>
+                                            </div>
+                                            <div class="perfomance-issue-items">
+                                                <span class="ucase">minimize request size</span>
+                                                <span class="ucase"></span>
+                                            </div>
+                                            <div class="perfomance-issue-items">
+                                                <span class="ucase">avoid landing page</span>
+                                                <span></span>
+                                            </div>
+                                            <div class="perfomance-issue-items">
+                                                <span class="ucase">minify css</span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 performance-over" id="">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6 class="ucase">performance overtime</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="performance"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                             <!-- end perfomance charts -->
                         </div>
@@ -651,11 +698,9 @@
                                                 <span class="card-title-item ucase "
                                                       style="width:40%">unsuccessful</span>
                                             </li>
-
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -671,7 +716,9 @@
 <script src="js/chart/UpTime.js"></script>
 <script src="js/dashboard-analytics.min.js"></script>
 <script src="js/chart/VulnerabilityDetectionTrend.js"></script>
-
+<script src="js/chart/vulnerabilityFamily.js"></script>
+<script src="js/chart/last10dayschart.js"></script>
+<script src="js/chart/performance.js"></script>
 </body>
 
 </html>

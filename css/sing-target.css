@@ -26,9 +26,38 @@
 
 .vuln-trend-card .card-header, .vuln-family-card .card-header {
     background-color: #313768;
-
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #3B4576;
 }
 
-.vuln-family-card .card-body , .vuln-trend-card .card-body{
+.vuln-family-card .card-body, .vuln-trend-card .card-body {
     background-color: #313768;
+    border-radius: 0 0 15px 15px;
+}
+
+.performance-over .card-header, .perfomance-issue .card-header {
+    background-color: #313768;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #3B4576;
+}
+
+.performance-over .card-body, .perfomance-issue .card-body {
+    background-color: #313768;
+    border-radius: 0 0 15px 15px;
+}
+
+.vuln-trend-card .card, .vuln-family-card, .performance-over .card,.perfomance-issue .card {
+    background-color: #353D6C;
+}
+.perfomance-issue-items {
+    border-bottom: 1px solid #3B4576;
+     color: white;
+    padding: 20px;
+    font-size: 13px;
+}
+.perfomance-issue-items:last-child{
+    border-bottom: none;
+}
+.progress{
+    width: 20%;
 }
