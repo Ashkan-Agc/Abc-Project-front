@@ -61,3 +61,32 @@
 .progress{
     width: 20%;
 }
+.event-list{
+    padding: 0;
+    color: white;
+}
+li.event-item {
+  padding: 0 1rem 0 1.5rem;
+  background-color: #3b4576;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.event-item span {
+  display: inline-block;
+}
+
+.event-item .progress {
+  height: 0.5rem;
+}
+
+span.event-name {
+  width: 30%;
+}
+
+span.event-count {
+  width: 10%;
+}
+
+span.event-percentage {
+  width:50%;
+}

@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr">
+<html class="loading" data-textdirection="ltr" lang="en">
 <!-- BEGIN: Head-->
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" name="viewport">
     <title>single target</title>
-    <link rel="icon" href="images/logo.png">
+    <link href="images/logo.png" rel="icon">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="css/colors.min.css">
-    <link rel="stylesheet" type="text/css" href="css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vertical-menu-modern.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="css/single-scan-result.css">
-    <link rel="stylesheet" href="css/performance.css">
-    <link rel="stylesheet" href="css/maindash.css   ">
-    <link rel="stylesheet" href="css/sing-target.css">
+    <link href="css/vendors.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-extended.min.css" rel="stylesheet" type="text/css">
+    <link href="css/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vertical-menu-modern.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/single-scan-result.css" rel="stylesheet">
+    <link href="css/performance.css" rel="stylesheet">
+    <link href="css/maindash.css   " rel="stylesheet">
+    <link href="css/sing-target.css" rel="stylesheet">
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar menu-collapsed" data-open="click"
-      data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar menu-collapsed" data-col="2-columns"
+      data-menu="vertical-menu-modern" data-open="click">
 
 <!-- BEGIN: Header-->
 <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-semi-dark navbar-shadow">
@@ -36,10 +36,10 @@
                 <li class="nav-item mobile-menu d-lg-none mr-auto"><a
                         class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
                         class="feather icon-menu font-large-1"></i></a></li>
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo"
-                                                                                            alt="stack admin logo"
-                                                                                            src="images/logo.png"
-                                                                                            height="30">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img alt="stack admin logo"
+                                                                                            class="brand-logo"
+                                                                                            height="30"
+                                                                                            src="images/logo.png">
                     <h2 class="brand-text">APA </h2>
 
                 </a></li>
@@ -47,8 +47,8 @@
                                                                      data-toggle="collapse"><i
                         class="toggle-icon feather icon-toggle-right font-medium-3 white"
                         data-ticon="feather.icon-toggle-right"></i></a></li>
-                <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
-                                                  data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-target="#navbar-mobile"
+                                                  data-toggle="collapse"><i class="fa fa-ellipsis-v"></i></a></li>
             </ul>
         </div>
         <div class="navbar-container content">
@@ -58,8 +58,9 @@
                 </ul>
                 <ul class="nav navbar-nav float-right">
 
-                    <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
-                                                                           data-toggle="dropdown"><i
+                    <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label"
+                                                                           data-toggle="dropdown"
+                                                                           href="#"><i
                             class="ficon feather icon-bell"></i><span
                             class="badge badge-pill badge-danger badge-up">5</span></a>
                         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
@@ -152,8 +153,8 @@
                     </li>
 
                     <li class="dropdown dropdown-user nav-item"><a
-                            class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                        <div class="avatar avatar-online"><img src="images/user.png" alt="avatar"><i></i>
+                            class="dropdown-toggle nav-link dropdown-user-link" data-toggle="dropdown" href="#">
+                        <div class="avatar avatar-online"><img alt="avatar" src="images/user.png"><i></i>
                         </div>
                     </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -171,7 +172,7 @@
 <!-- BEGIN: Main Menu-->
 <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="main-menu-content">
-        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+        <ul class="navigation navigation-main" data-menu="menu-navigation" id="main-menu-navigation">
             <li class=" nav-item"><a href="app-email.html"><i class="feather icon-mail"></i><span class="menu-title"
                                                                                                   data-i18n="Email Application">Home</span></a>
             </li>
@@ -211,14 +212,14 @@
                             <!-- start nav -->
                             <div class="col-lg-12">
                                 <div class="nav page-view text-center ">
-                                    <a href="single-target.html"
-                                       class=" col-md-2 col-sm-4 nav-link ucase nav-link-active">overview</a>
-                                    <a href="single-scan-result.html"
-                                       class=" col-md-2 col-sm-4 nav-link ucase">vulnerability</a>
-                                    <a href="" class=" col-md-2 col-sm-4 nav-link ucase">uptime</a>
-                                    <a href="performance.html"
-                                       class=" col-md-2 col-sm-4 nav-link ucase">performance</a>
-                                    <a href="" class=" col-md-2 col-sm-4 nav-link ucase">remediation</a>
+                                    <a class=" col-md-2 col-sm-4 nav-link ucase nav-link-active"
+                                       href="single-target.html">overview</a>
+                                    <a class=" col-md-2 col-sm-4 nav-link ucase"
+                                       href="single-scan-result.html">vulnerability</a>
+                                    <a class=" col-md-2 col-sm-4 nav-link ucase" href="">uptime</a>
+                                    <a class=" col-md-2 col-sm-4 nav-link ucase"
+                                       href="performance.html">performance</a>
+                                    <a class=" col-md-2 col-sm-4 nav-link ucase" href="">remediation</a>
                                 </div>
                             </div>
                             <!-- end nav -->
@@ -232,8 +233,9 @@
                                                     <div class="col-12">
                                                         <div class="row">
                                                             <h1> 1.1 k</h1>
-                                                            <img style="padding: 5px 10px 8px 20px;"
-                                                                 src="images/Fill 1489.png" alt="">
+                                                            <img alt=""
+                                                                 src="images/Fill 1489.png"
+                                                                 style="padding: 5px 10px 8px 20px;">
                                                         </div>
                                                     </div>
                                                     <div class="row pl-2">
@@ -248,8 +250,9 @@
                                                     <div class="col-12">
                                                         <div class="row">
                                                             <h1> 1.1 k</h1>
-                                                            <img style="padding: 5px 10px 8px 20px;"
-                                                                 src="images/Fill 1489.png" alt="">
+                                                            <img alt=""
+                                                                 src="images/Fill 1489.png"
+                                                                 style="padding: 5px 10px 8px 20px;">
                                                         </div>
                                                     </div>
                                                     <div class="row pl-2">
@@ -264,8 +267,9 @@
                                                     <div class="col-12">
                                                         <div class="row">
                                                             <h1> 1.1 k</h1>
-                                                            <img style="padding: 5px 10px 8px 20px;"
-                                                                 src="images/Fill 1489.png" alt="">
+                                                            <img alt=""
+                                                                 src="images/Fill 1489.png"
+                                                                 style="padding: 5px 10px 8px 20px;">
                                                         </div>
                                                     </div>
                                                     <div class="row pl-2">
@@ -280,8 +284,9 @@
                                                     <div class="col-12">
                                                         <div class="row">
                                                             <h1> 1.1 k</h1>
-                                                            <img style="padding: 5px 10px 8px 20px;"
-                                                                 src="images/Fill 1489.png" alt="">
+                                                            <img alt=""
+                                                                 src="images/Fill 1489.png"
+                                                                 style="padding: 5px 10px 8px 20px;">
                                                         </div>
                                                     </div>
                                                     <div class="row pl-2">
@@ -473,8 +478,8 @@
                                             <div class="perfomance-issue-items">
                                                 <span class="ucase">minimize redirects</span>
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                         aria-valuemin="0" aria-valuemax="100">100%
+                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70"
+                                                         class="progress-bar" role="progressbar">100%
                                                     </div>
                                                 </div>
                                             </div>
@@ -532,8 +537,8 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <div id="goal-list-scroll"
-                                             class="table-responsive height-350 position-relative">
+                                        <div class="table-responsive height-350 position-relative"
+                                             id="goal-list-scroll">
                                             <ul class="alert-list">
                                                 <li class="alert-date-sep">
                                                     (2020/4/5)
@@ -541,7 +546,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                                <img alt="" src="images/bug-alert-red.png" width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
                                                     </a>
@@ -549,7 +554,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/bug-alert-orange.png" alt=""
+                                                                <img alt="" src="images/bug-alert-orange.png"
                                                                      width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
@@ -558,7 +563,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/down-alert-red.png" alt="" width="25">
+                                                                <img alt="" src="images/down-alert-red.png" width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
                                                     </a>
@@ -566,7 +571,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                                <img alt="" src="images/bug-alert-red.png" width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
                                                     </a>
@@ -574,7 +579,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/bug-alert-orange.png" alt=""
+                                                                <img alt="" src="images/bug-alert-orange.png"
                                                                      width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
@@ -586,7 +591,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                                <img alt="" src="images/bug-alert-red.png" width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
                                                     </a>
@@ -594,7 +599,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                                <img alt="" src="images/bug-alert-red.png" width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
                                                     </a>
@@ -602,7 +607,7 @@
                                                 <li class="alert-item">
                                                     <a href="#">
                                                             <span class="alert-logo">
-                                                                <img src="images/bug-alert-red.png" alt="" width="25">
+                                                                <img alt="" src="images/bug-alert-red.png" width="25">
                                                             </span>
                                                         <span class="alert-text">an xss is detected</span>
                                                     </a>
@@ -624,80 +629,29 @@
                                 </div>
 
                                 <div class="card-content">
-                                    <div class="card-body " style="background-color: #3B4576;">
+                                    <div class="card-body">
                                         <ul class="event-list">
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase"
-                                                      style="width:40%">unsuccessful</span>
+                                            <li class="event-item">
+                                                <span class="event-name">xss</span>
+                                                <span class="event-count">10</span>
+                                                <span class="event-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50"
+                                   class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
+                            </div>
+                          </span>
                                             </li>
-                                            <li class="event-item one seccessfull">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">successful</span>
+                                            <li class="event-item">
+                                                <span class="event-name">xss</span>
+                                                <span class="event-count">10</span>
+                                                <span class="event-percentage">
+                            <div class="progress progress-sm mt-1 mb-0">
+                              <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar bg-red"
+                                   role="progressbar" style="width: 95%"></div>
+                            </div>
+                          </span>
                                             </li>
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">unsuccessful</span>
-                                            </li>
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">unsuccessful</span>
-                                            </li>
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">unsuccessful</span>
-                                            </li>
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">unsuccessful</span>
-                                            </li>
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">unsuccessful</span>
-                                            </li>
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">unsuccessful</span>
-                                            </li>
-                                            <li class="event-item one unsuccessful">
-                                                    <span class="card-title-item ucase"
-                                                          style="width:20%">03/12/20</span>
-                                                <span class="card-title-item ucase" style="width:12%">18:30</span>
-                                                <span class="card-title-item ucase" style="width:15%">scans</span>
-                                                <span class="card-title-item ucase "
-                                                      style="width:40%">unsuccessful</span>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>

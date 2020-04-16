@@ -1,12 +1,16 @@
 var options = {
     series: [
         {
-            name: 'LOWEST',
+            name: '',
             data: [150, 20, 10, 40, 140, 130]
         },
         {
+            name: 'LOWEST',
+            data: []
+        },
+        {
             name: 'HIGHEST',
-            data: [150, 20, 10, 40, 140, 130]
+            data: []
         }
     ],
     legend: {
@@ -50,8 +54,8 @@ var options = {
         enabled: false
     },
     fill: {
-        colors: ['#484091'],
-        opacity: 0.8,
+        colors: ['#aaa'],
+        opacity: 1,
         type: 'solid'
     },
     xaxis: {
