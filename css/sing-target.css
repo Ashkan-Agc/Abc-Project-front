@@ -58,9 +58,6 @@
 .perfomance-issue-items:last-child{
     border-bottom: none;
 }
-.progress{
-    width: 20%;
-}
 .event-list{
     padding: 0;
     color: white;
