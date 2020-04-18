@@ -1,7 +1,7 @@
 var options = {
     series: [
         {
-            name: '',
+            name: 'data',
             data: [150, 20, 10, 40, 140, 130]
         },
         {

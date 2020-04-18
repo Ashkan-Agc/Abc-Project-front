@@ -87,3 +87,6 @@ span.event-count {
 span.event-percentage {
   width:50%;
 }
+.progress{
+    height: 0.5rem;
+}
