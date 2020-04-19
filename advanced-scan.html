@@ -202,58 +202,77 @@
                             <!-- end nav -->
                             <!-- start form card -->
                         </div>
-                        <div class="card main-form-card">
-                            <div class="row">
-                                <div class="col-md-3 side-container p-0">
-                                    <button onclick="openTab(event, 'web')" class="dropdown-btn ucase">basic <i
-                                            class="fa fa-caret-right"></i></button>
-                                    <div class="dropdown-container">
-                                        <a class="ucase">general</a>
-                                        <a class="ucase">schedule</a>
-                                        <a class="ucase">notifications</a>
-                                    </div>
-                                    <button class="dropdown-btn ucase">advanced <i
-                                            class="fa fa-caret-right"></i></button>
-                                    <div class="dropdown-container">
-                                        <a class="ucase">general</a>
-                                        <a class="ucase">schedule</a>
-                                        <a class="ucase">notifications</a>
-                                    </div>
-                                    <button class="dropdown-btn ucase">discovery <i
-                                            class="fa fa-caret-right"></i></button>
-                                    <div class="dropdown-container">
-                                        <a class="ucase">general</a>
-                                        <a class="ucase">schedule</a>
-                                        <a class="ucase">notifications</a>
-                                    </div>
-                                    <button class="dropdown-btn ucase">assessment <i
-                                            class="fa fa-caret-right"></i></button>
-                                    <div class="dropdown-container">
-                                        <a class="ucase">general</a>
-                                        <a class="ucase">schedule</a>
-                                        <a class="ucase">notifications</a>
-                                    </div>
-                                    <button class="dropdown-btn ucase">report <i class="fa fa-caret-right"></i></button>
-                                    <div class="dropdown-container">
-                                        <a class="ucase">general</a>
-                                        <a class="ucase">schedule</a>
-                                        <a class="ucase">notifications</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-6 ucase">Name</div>
-                                            <div class="col-6"></div>
+                        <div class="col-12">
+                            <div class="card main-form-card">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12 side-container p-0">
+                                        <button onclick="openTab(event, 'web')" class="dropdown-btn ucase">basic <i
+                                                class="fa fa-caret-right"></i></button>
+                                        <div class="dropdown-container">
+                                            <a class="ucase">general</a>
+                                            <a class="ucase">schedule</a>
+                                            <a class="ucase">notifications</a>
+                                        </div>
+                                        <button class="dropdown-btn ucase">advanced <i
+                                                class="fa fa-caret-right"></i></button>
+                                        <div class="dropdown-container">
+                                            <a class="ucase">general</a>
+                                            <a class="ucase">schedule</a>
+                                            <a class="ucase">notifications</a>
+                                        </div>
+                                        <button class="dropdown-btn ucase">discovery <i
+                                                class="fa fa-caret-right"></i></button>
+                                        <div class="dropdown-container">
+                                            <a class="ucase">general</a>
+                                            <a class="ucase">schedule</a>
+                                            <a class="ucase">notifications</a>
+                                        </div>
+                                        <button class="dropdown-btn ucase">assessment <i
+                                                class="fa fa-caret-right"></i></button>
+                                        <div class="dropdown-container">
+                                            <a class="ucase">general</a>
+                                            <a class="ucase">schedule</a>
+                                            <a class="ucase">notifications</a>
+                                        </div>
+                                        <button class="dropdown-btn ucase">report <i class="fa fa-caret-right"></i></button>
+                                        <div class="dropdown-container">
+                                            <a class="ucase">general</a>
+                                            <a class="ucase">schedule</a>
+                                            <a class="ucase">notifications</a>
                                         </div>
                                     </div>
+                                    <div class="col-md-9 col-sm-12">
+                                            <form action="" class="form" method="post">                                             
+                                                <div class=" form-row row">
+                                                    <div class="col-3 ucase from-group">name</div>
+                                                    <div class="col-md-9 pr-5">
+                                                        <input type="text" required class="form-control name-inp">
+                                                    </div>
+                                                    <div class="col-3 ucase">description</div>
+                                                    <div class="col-md-9 pr-5">
+                                                        <input type="text" class="form-control desc-inp">
+                                                    </div>
+                                                    <div class="col-3 ucase">foler</div>
+                                                    <div class="col-md-9 pr-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-3 ucase">Targets</div>
+                                                    <div class="col-md-9 pr-5">
+                                                        <input type="text" placeholder="example:192.12.1.1-192.1.1.1 test.com" required class="form-control targ-inp">
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                                <button type="submit" class="btn btn-primary">Cancel</button>
+                                            </form>
+                                    </div>
                                 </div>
+    
                             </div>
-
+                            <!-- end form card -->
                         </div>
-                        <!-- end form card -->
+                        
                     </div>
-
+                    <br>
                     <div class="col-lg-3">
                         <div class="row">
                             <!-- start last alert -->

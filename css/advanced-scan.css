@@ -1,3 +1,6 @@
+.main-form-card{
+  border-radius:5px;
+}
 .main-form-card .row{
   height: 500px;
   margin-left:3px;
@@ -6,13 +9,12 @@
 .card {
   margin: 20px 0;
   background-color: #2b3261;
-  border-radius: 0;
 }
 .card-header {
   background-color: #2b3261;
 }
 .side-container{
-  border: 1px solid #aaa;
+  border: 1px solid #353d6c;
   height: 100%;
   padding: 0 12px;
 }
@@ -21,7 +23,7 @@
   font-size: 15px;
   color: white;
   display: block;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #353d6c;
   border-left: none;
   border-right: none;
   background: none;
@@ -49,4 +51,32 @@
   float: right;
   padding-right: 8px;
   color: tomato;
+}
+
+form{
+  color: white;
+}
+input.form-control{
+  color: white;
+}
+input.form-control:focus{
+  color: white;
+}
+.form-control{
+  background-color: #313768;
+  width:80%;
+  color: white;
+  border-color: darkgray;
+}
+.form-control:focus{
+  background-color: #313768;
+}
+.name-inp{
+  height: 30%;
+}
+.desc-inp{
+  height: 70%;
+}
+.targ-inp{
+  height: 70%;
 }
