@@ -1,79 +1,93 @@
 .last-scan-list {
-    padding: 10px;
+  padding: 10px;
+  list-style: none;
 }
 
 .last-scan-item {
-    height: 40px;
-    background-color: #3B4576;
-    margin-bottom: 5px;
-    color: white;
+  height: 40px;
+  background-color: #3b4576;
+  margin-bottom: 5px;
+  color: white;
 }
 
 .last-scan-item span {
-    margin-top: 6px;
-    margin-left: 5px;
-    font-weight: 400;
+  margin-top: 6px;
+  margin-left: 5px;
+  font-weight: 400;
 }
 
 .vuln-count-item {
-    padding: 1px 5px;
+  padding: 1px 5px;
 }
 
 .card-vulns > .card-header {
-    border-radius: 15px;
-    background-color: #313768;
+  border-radius: 15px;
+  background-color: #313768;
 }
 
-.vuln-trend-card .card-header, .vuln-family-card .card-header {
-    background-color: #313768;
-    border-radius: 15px 15px 0 0;
-    border-bottom: 1px solid #3B4576;
+.vuln-trend-card .card-header,
+.vuln-family-card .card-header {
+  background-color: #313768;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 1px solid #3b4576;
 }
 
-.vuln-family-card .card-body, .vuln-trend-card .card-body {
-    background-color: #313768;
-    border-radius: 0 0 15px 15px;
+.vuln-family-card .card-body,
+.vuln-trend-card .card-body {
+  background-color: #313768;
+  border-radius: 0 0 15px 15px;
 }
 
-.performance-over .card-header, .perfomance-issue .card-header {
-    background-color: #313768;
-    border-radius: 15px 15px 0 0;
-    border-bottom: 1px solid #3B4576;
+.performance-over .card-header,
+.perfomance-issue .card-header {
+  background-color: #313768;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 1px solid #3b4576;
 }
 
-.performance-over .card-body, .perfomance-issue .card-body {
-    background-color: #313768;
-    border-radius: 0 0 15px 15px;
+.performance-over .card-body,
+.perfomance-issue .card-body {
+  background-color: #313768;
+  border-radius: 0 0 15px 15px;
 }
 
-.vuln-trend-card .card, .vuln-family-card, .performance-over .card,.perfomance-issue .card {
-    background-color: #353D6C;
+.vuln-trend-card .card,
+.vuln-family-card,
+.performance-over .card,
+.perfomance-issue .card {
+  background-color: #353d6c;
 }
+
 .perfomance-issue-items {
-    border-bottom: 1px solid #3B4576;
-     color: white;
-    padding: 20px;
-    font-size: 13px;
+  border-bottom: 1px solid #3b4576;
+  color: white;
+  padding: 20px;
+  font-size: 13px;
 }
-.perfomance-issue-items:last-child{
-    border-bottom: none;
+
+.perfomance-issue-items:last-child {
+  border-bottom: none;
 }
-.event-list{
-    padding: 0;
-    color: white;
+
+.event-list {
+  padding: 0;
+  color: white;
+  list-style: none;
 }
+
 li.event-item {
   padding: 0 1rem 0 1.5rem;
   background-color: #3b4576;
   height: 40px;
   margin-bottom: 5px;
 }
+
 .event-item span {
   display: inline-block;
 }
 
-.event-item .progress {
-  height: 0.5rem;
+.progress {
+  height: 0.6rem;
 }
 
 span.event-name {
@@ -85,8 +99,57 @@ span.event-count {
 }
 
 span.event-percentage {
-  width:50%;
+  width: 50%;
 }
-.progress{
-    height: 0.5rem;
+
+span.issue-percentage {
+  display: inline-block;
+  transform: translateX(10vw);
+  width: 35%;
+}
+.info-container-item {
+  display: inline-block;
+  width: 50%;
+  padding-left: 5px;
+  color: white;
+}
+.info-container {
+  
+  padding: 15px;
+}
+.square-red {
+  padding-top: 5px;
+  height: 14px;
+  width: 14px;
+  background-color: #f7517f;
+  border-radius: 3px;
+}
+.square-yellow {
+  height: 14px;
+  width: 14px;
+  background-color: #eaa323;
+  border-radius: 3px;
+}
+.square-blue {
+  height: 14px;
+  width: 14px;
+  background-color: #56cdf9;
+  border-radius: 3px;
+}
+.info-container-item-detail {
+  color: #aaaaaa;
+  font-size: 10px;
+  padding-left: 20px;
+}
+.target-info-card{
+  border-radius: 20px;
+  background-color: #313768; ;
+}
+.target-info-card .card-header{
+  background-color: #313768;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #aaaaaa  ;
+}
+#assets{
+
 }
