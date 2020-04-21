@@ -1,50 +1,50 @@
-.main-form-card{
-  border-radius:5px;
+.main-form-card {
+  border-radius: 5px;
 }
-.main-form-card .row{
+.main-form-card .row {
   height: 500px;
-  margin-left:3px;
+  margin-left: 3px;
   padding-right: 20px;
 }
 .card {
-  margin: 20px 0;
+  margin: 20px 15px;
   background-color: #2b3261;
+  border-radius: 5px;
 }
 .card-header {
   background-color: #2b3261;
 }
-.side-container{
-  border: 1px solid #353d6c;
-  height: 100%;
+.side-container {
+  border: 1px solid #aaaaaa;
   padding: 0 12px;
+  border-radius: 5px;
 }
-.side-container a,.dropdown-btn {
+.side-container a,
+.dropdown-btn {
   text-decoration: none;
   font-size: 15px;
   color: white;
   display: block;
-  border: 1px solid #353d6c;
+  border: 1px solid #aaaaaa;
   border-left: none;
   border-right: none;
   background: none;
   width: 100%;
   text-align: left;
   cursor: pointer;
-  padding: 10px; 
+  padding: 10px;
   outline: none;
+
 }
-.side-container a{
+.side-container a {
   border: none;
-  padding: 5px;
-  padding-left: 3vw;
-  font-size: 13px;
+  font-size: 12px;
   color: #aaaaaa;
 }
 .dropdown-container {
   display: none;
   background-color: #2b3261;
   border: none;
-
 }
 
 .fa-caret-right {
@@ -53,30 +53,47 @@
   color: tomato;
 }
 
-form{
+form {
+  color: white;
+  font-size:13px ;
+}
+input.form-control {
   color: white;
 }
-input.form-control{
+input.form-control:focus {
   color: white;
 }
-input.form-control:focus{
-  color: white;
-}
-.form-control{
+.form-control {
   background-color: #313768;
-  width:80%;
+  width: 80%;
   color: white;
   border-color: darkgray;
+  padding: 0 10px;
 }
-.form-control:focus{
+
+.form-control:focus {
   background-color: #313768;
 }
-.name-inp{
-  height: 30%;
+.desc-inp {
+  height: 7vw;
 }
-.desc-inp{
-  height: 70%;
+.targ-inp {
+  height: 7vw;
 }
-.targ-inp{
-  height: 70%;
+.row {
+  margin: 0;
+}
+input {
+  padding: 0;
+}
+.btn-container{
+margin-top: 30px;
+}
+.btn{
+  border: 1px solid #aaaaaa;
+  color: white;
+  padding: 10px 15px;
+}
+.btn:hover{
+  color: tomato;
 }
