@@ -225,3 +225,7 @@ li.vuln-item {
 .ucase {
   text-transform: uppercase;
 }
+.apexcharts-tooltip {
+  background: #f3f3f3;
+  color: orange;
+}

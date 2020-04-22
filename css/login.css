@@ -12,6 +12,7 @@ html, body {
 }
 body{
     color: white;
+    background-image: url("");
 }
 
 .centerDiv
@@ -32,7 +33,7 @@ body{
         border-radius: 25px;
         margin-top: 50px;
         transform:translateX(40px);
-        box-shadow: 1px 1px 10px 2px #020220;
+        box-shadow: 1px 1px 5px 2px #070220;
     }
 .div2
     {  
@@ -44,7 +45,7 @@ body{
         margin-top: 18px;
         height: 560px;
         transform:translateX(-40px);
-        box-shadow: 1px 1px 10px 2px #020220;
+        box-shadow: 1px 1px 5px 2px #70220;
 }
 
 .fluid{

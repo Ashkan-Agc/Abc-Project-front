@@ -288,55 +288,58 @@ var options = {
       ],
     },
   ],
-  chart:{
-    toolbar: {
-      show: false
+  chart: {
+    type: "area",
+
+    zoom: {
+      autoScaleYaxis: true,
     },
-    height:300
+    toolbar: {
+      show: false,
+    },
+    height: 300,
   },
   tooltip: {
-    theme:'dark'
+    theme: "dark",
   },
-  stroke:{
-    curve:'straight',
+  stroke: {
+    curve: "straight",
     width: 1.8,
-    colors:['#694ECB']
+    colors: ["#694ECB"],
   },
   dataLabels: {
-    enabled: false
+    enabled: false,
   },
   fill: {
-    type: 'solid',
-    colors:['#694ECB']
+    colors: ["#5440a4"],
   },
   xaxis: {
-    type: 'datetime',
+    type: "datetime",
     labels: {
       style: {
-        colors: '#B3BBFD',
+        colors: "#B3BBFD",
       },
-      offsetY:2
+      offsetY: 2,
     },
     axisBorder: {
       show: false,
     },
     axisTicks: {
       show: false,
-    }
+    },
   },
-  yaxis:{
-    labels:{
-      style:{
-        colors:'#B3BBFD',
+  yaxis: {
+    labels: {
+      style: {
+        colors: "#B3BBFD",
       },
-      offsetX:-10
-    }
+      offsetX: -10,
+    },
   },
-  grid:{
-    borderColor:'#272C55'
+  grid: {
+    borderColor: "#272C55",
   },
 };
 
 var chart = new ApexCharts(document.querySelector("#pageload"), options);
 chart.render();
-      

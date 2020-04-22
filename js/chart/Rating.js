@@ -46,7 +46,7 @@ var options1 = {
     },
     tooltip: {
         enabled: true,
-        theme:'dark'
+        theme: 'dark',
     },
     xaxis: {
         labels: {
