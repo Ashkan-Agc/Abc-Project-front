@@ -31,7 +31,7 @@ Email: agc.ashkan79@gmail.com
   width: 70%;
 }
 #assets {
-  margin: 15px 0px; 
+  margin: 20px 0px; 
 }
 .card-vulns .card-header{
   background-color: #353d6c;
@@ -102,9 +102,16 @@ Email: agc.ashkan79@gmail.com
 }
 
 #assets .col-lg-3 {
-  padding: 0 15px;
+  padding: 10;
 }
-
+#assets .col-lg-3:first-child {
+  padding: 10;
+  padding-left: 0;
+}
+#assets .col-lg-3:last-child {
+  padding: 10;
+  padding-right: 0;
+}
 .load-third {
   color: tomato;
 }

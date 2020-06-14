@@ -74,13 +74,12 @@ var options = {
             stops: [0, 100]
         }
     },
-    labels: ['Apples', 'Oranges', 'Bananas'],
+    labels: ['1', '2', '3'],
 };
 
 
 var chart = new ApexCharts(document.querySelector("#webserver"), options);
 chart.render();
-
 var chart = new ApexCharts(document.querySelector("#programmingLNG"), options);
 chart.render();
 var chart = new ApexCharts(document.querySelector("#operating-system"), options);

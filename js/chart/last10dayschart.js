@@ -6,7 +6,8 @@ var options = {
         }
     ],
     chart: {
-        height: 350,
+        type:"area",
+        height: 300,
         toolbar: {
             show: false
         }
@@ -16,21 +17,24 @@ var options = {
     },
     stroke: {
         curve: 'straight',
-        width: 1.2
+        width: 1.8,
+        colors:["#21ce99"]
     },
     dataLabels: {
         enabled: false
     },
+
     fill: {
+        colors: ['#326678', '#E91E63', '#383e6b'],
         type: 'gradient',
         gradient: {
             shade: 'white',
             type: "vertical",
-            shadeIntensity: .25,
+            shadeIntensity: .15,
             gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
             inverseColors: true,
             opacityFrom: 1,
-            opacityTo: 10,
+            opacityTo: .1,
         }
     },
     xaxis: {

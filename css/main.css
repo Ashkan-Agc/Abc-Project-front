@@ -1,6 +1,6 @@
 /*
 developed by Ashkan Ganj
-Github: @Ashkan-Agc 
+Github: @Ashkan-Agc
 Email: agc.ashkan79@gmail.com
 
  */
@@ -225,7 +225,31 @@ li.vuln-item {
 .ucase {
   text-transform: uppercase;
 }
-.apexcharts-tooltip {
-  background: #f3f3f3;
-  color: orange;
+table{
+  height: 400px;
+  overflow-x: auto;
+  color: white;
+  width: 100%;
+  font-size: 12px;
+}
+
+tr{
+  height: 60px;
+  border-bottom: solid 5px #353d6d;
+}
+td,th{
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+tr:nth-child(even) {
+  background-color: #3B4576;
+}
+tr:nth-child(odd) {
+  background-color: #31396D;
+}
+#response1{
+    margin: 0;
+    padding: 0;
+    height: 80px;
 }

@@ -1,48 +1,54 @@
-/*
-developed by Ashkan Ganj
-Github: @Ashkan-Agc 
-Email: agc.ashkan79@gmail.com
-
- */
-
 var options = {
     series: [
         {
-            name: 'Response time',
+            name: 'data',
             data: [150, 20, 10, 40, 140, 130, 20, 103, 1, 20, 10, 40, 140, 130]
         }
     ],
     chart: {
+        type:'area',
+        height: 70,
+        width: '70%',
         toolbar: {
             show: false
         },
-        type: 'area',
-        stacked: false,
-        background: '#313768'
+        
     },
+    colors:['#21ce99'],
     tooltip: {
         theme: 'dark'
     },
+    grid:{
+        show:false
+    },
     stroke: {
         curve: 'straight',
-        width: 1.2
+        width: 2,
+        color:'#21ce99'
     },
     dataLabels: {
         enabled: false
     },
     fill: {
+        type: 'gradient',
         gradient: {
-            enabled: true,
-            opacityFrom: 0.45,
-            opacityTo: 0
+            shade: 'white',
+            type: "vertical",
+            shadeIntensity: .25,
+            gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
+            inverseColors: true,
+            opacityFrom: .5,
+            opacityTo: .2,
         }
     },
+    legend: {
+        labels: {
+           colors:['#eaa323',]
+       }
+      },
     xaxis: {
         labels: {
-            style: {
-                colors: '#B3BBFD',
-            },
-            offsetY: 2
+            show:false
         },
         axisBorder: {
             show: false,
@@ -54,20 +60,17 @@ var options = {
     },
     yaxis: {
         labels: {
-            style: {
-                colors: '#B3BBFD',
-            },
-            offsetX: -10
+            show:false
         }
     },
     grid: {
-        borderColor: '#272C55'
+        show:false
     },
     annotations: {
         xaxis: [
             {
-                x: 140,
-                x2: 120,
+                x: 70,
+                x2: 20,
                 fillColor: '#F7517F',
                 borderColor: '#F7517F',
                 opacity: 1
@@ -78,13 +81,25 @@ var options = {
                 fillColor: '#F7517F',
                 borderColor: '#F7517F',
                 opacity: 1
+            },
+            {
+                x: 600,
+                x2: 660,
+                fillColor: '#F7517F',
+                borderColor: '#F7517F',
+                opacity: 1
             }
         ]
     }
 };
-
-
-var chart = new ApexCharts(document.querySelector(id = "response"), options);
+var chart = new ApexCharts(document.querySelector("#response1"), options);
 
 chart.render();
+var chart = new ApexCharts(document.querySelector("#response2"), options);
+
+chart.render();
+var chart = new ApexCharts(document.querySelector("#response3"), options);
+
+chart.render();
+
 

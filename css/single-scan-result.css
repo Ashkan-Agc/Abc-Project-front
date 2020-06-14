@@ -33,17 +33,17 @@ Email: agc.ashkan79@gmail.com
   background-color: #353d6c;
 }
 table {
-  border-collapse: collapse;
+  border-collapse:collapse;
   width: 100%;
+  overflow-x: auto;
+  height: 100%;
 }
 tr {
   color: white;
   font-size: 13px;
+  padding: 0;
 }
-td,
-th {
-  height: 50px;
-  padding: 10px 10px;
+td{
   
 }
 th {
@@ -108,4 +108,40 @@ tr:nth-child(odd) {
 }
 .btn:hover{
   background-color: #353d6c;
+}
+
+.box-critical{
+  height: 1.7rem;
+  width:5rem;
+  background-color: #bc3057;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 1px;
+}
+.box-medium{
+  height: 1.7rem;
+  width:5rem;
+  background-color: #eaa323;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 1px;
+}
+.box-high{
+  height: 1.7rem;
+  width:5rem;
+  background-color: #f7517f;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 1px;
+}
+.box-info{
+  height: 1.7rem;
+  width:5rem;
+  background-color: #16ceb9;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 1px;
+}
+.vuln-count-item{
+  padding:.2rem .5rem;
 }
